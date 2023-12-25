@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis
+  </title>
+  <meta content="RFC" property="og:title" />
+  <meta content="Reinforcement learning has shown great promise for synthesizing realistic human behaviors by learning humanoid control policies from motion capture data. However, it is still very challenging to reproduce sophisticated human skills like ballet dance, or to stably imitate long-term human behaviors with complex transitions. The main difficulty lies in the dynamics mismatch between the humanoid model and real humans. That is, motions of real humans may not be physically possible for the humanoid model. To overcome the dynamics mismatch, we propose a novel approach, residual force control (RFC), that augments a humanoid control policy by adding external residual forces into the action space. During training, the RFC-based policy learns to apply residual forces to the humanoid to compensate for the dynamics mismatch and better imitate the reference motion. Experiments on a wide range of dynamic motions demonstrate that our approach outperforms state-of-the-art methods in terms of convergence speed and the quality of learned motions. Notably, we showcase a physics-based virtual character empowered by RFC that can perform highly agile ballet dance moves such as pirouette, arabesque and jeté. Furthermore, we propose a dual-policy control framework, where a kinematic policy and an RFC-based policy work in tandem to synthesize multi-modal infinite-horizon human motions without any task guidance or user input. Our approach is the first humanoid control method that successfully learns from a large-scale human motion dataset (Human3.6M) and generates diverse long-term motions." name="description" property="og:description" />
+  <meta content="https://www.ye-yuan.com/rfc" property="og:url" />
+  <meta name="keywords" content="Human Pose Estimation, Human Mesh Recovery, GLAMR">
+
+  <link rel="stylesheet" href="../assets/css/project_stylesheet.css">
+  <link href="../data/misc/favicon.ico" rel="shortcut icon">
+  <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../assets/academicons/css/academicons.min.css">
+
+  <script defer src="../assets/js/fontawesome.all.min.js"></script>
+</head>
+
+<body>
+  <div class="n-header">
+  </div>
+  <div class="n-title">
+    <h1>
+      Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis
+    </h1>
+  </div>
+  <div class="n-byline">
+    <div class="byline">
+      <ul class="authors">
+        <li>
+          <a href="https://www.ye-yuan.com/" target="_blank">Ye Yuan</a><sup>1, 2</sup>
+        </li>
+        <li>
+          <a href="http://www.umariqbal.info/" target="_blank">Umar Iqbal</a><sup>1</sup>
+        </li>
+        <li>
+          <a href="https://research.nvidia.com/person/pavlo-molchanov/" target="_blank">Pavlo Molchanov</a><sup>1</sup>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~kkitani/" target="_blank">Kris Kitani</a><sup>2</sup>
+        </li>
+        <li>
+          <a href="https://jankautz.com/" target="_blank">Jan Kautz</a><sup>1</sup>
+        </li>
+      </ul>
+      <ul class="authors affiliations">
+        <li>
+          <sup>
+            1
+          </sup>
+          NVIDIA
+        </li>
+        <li>
+          <sup>
+            2
+          </sup>
+          Carnegie Mellon University
+        </li>
+      </ul>
+      <ul class="authors venue">
+        <li>
+          CVPR 2022 (Oral)
+        </li>
+      </ul>
+      <ul class="authors links">
+        <li>
+          <a href="https://arxiv.org/pdf/2112.01524.pdf" target="_blank">
+            <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/wpObDXcYueo" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Video</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/NVlabs/GLAMR" target="_blank">
+            <button class="btn"><i class="fab fa-github"></i> Code</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="n-article">
+    <div class="n-page video">
+      <video class="centered shadow" width="100%" autoplay muted loop playsinline>
+        <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+        <source src="assets/media/glamr_teaser.mp4#t=0.001" type="video/mp4" />
+      </video>
+      <div class="videocaption" style="margin-bottom: 1rem">
+        <div>
+          GLAMR (Left) recovers human meshes in consistent <strong>global</strong> coordinates from videos captured by <strong>dynamic cameras</strong> and <strong>infills</strong> missing poses (transparent) due to various
+          occlusions (obstruction, missed detection, outside field of view), while standard human mesh recovery methods (Right) fail to do so.
+        </div>   
+      </div>
+    </div>
+
+    <h2 id="abstract">
+      Abstract
+    </h2>
+    <p>
+      Reinforcement learning has shown great promise for synthesizing realistic human behaviors by learning humanoid control policies from motion capture data. However, it is still very challenging to reproduce sophisticated human skills like ballet dance, or to stably imitate long-term human behaviors with complex transitions. The main difficulty lies in the dynamics mismatch between the humanoid model and real humans. That is, motions of real humans may not be physically possible for the humanoid model. To overcome the dynamics mismatch, we propose a novel approach, residual force control (RFC), that augments a humanoid control policy by adding external residual forces into the action space. During training, the RFC-based policy learns to apply residual forces to the humanoid to compensate for the dynamics mismatch and better imitate the reference motion. Experiments on a wide range of dynamic motions demonstrate that our approach outperforms state-of-the-art methods in terms of convergence speed and the quality of learned motions. Notably, we showcase a physics-based virtual character empowered by RFC that can perform highly agile ballet dance moves such as pirouette, arabesque and jeté. Furthermore, we propose a dual-policy control framework, where a kinematic policy and an RFC-based policy work in tandem to synthesize multi-modal infinite-horizon human motions without any task guidance or user input. Our approach is the first humanoid control method that successfully learns from a large-scale human motion dataset (Human3.6M) and generates diverse long-term motions.
+    </p>
+
+    <h2 id="results">
+      Results
+    </h2>
+    <h3 class="results" id="sample">
+      Generative Motion Infilling with Multiple Samples
+    </h3>
+    <video class="centered shadow" width="100%" autoplay muted loop playsinline>
+      <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+      <source src="assets/media/glamr_sample.mp4#t=0.001" type="video/mp4" />
+    </video>
+    <div class="videocaption">
+      <div>GLAMR uses generative motion infiller to infill multiple plausible motions for invisible people.</div>
+    </div>
+
+    <h3 class="results">
+      3DPW Sequences
+    </h3>
+    <video class="centered shadow video_without_cap" width="100%" autoplay muted loop playsinline>
+      <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+      <source src="assets/media/glamr_res1.mp4#t=0.001" type="video/mp4" />
+    </video>
+    <video class="centered shadow video_without_cap" width="100%" autoplay muted loop playsinline>
+      <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+      <source src="assets/media/glamr_res2.mp4#t=0.001" type="video/mp4" />
+    </video>
+    <video class="centered shadow video_without_cap" width="100%" autoplay muted loop playsinline>
+      <!-- t=0.001 is a hack to make iPhone show video thumbnail -->
+      <source src="assets/media/glamr_res3.mp4#t=0.001" type="video/mp4" />
+    </video>
+    
+    
+    <h2>
+      Narrated Results Video
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/wpObDXcYueo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>
+      Overview
+    </h2>
+    <img class="figure" src="assets/media/glamr_overview.png" alt="GLAMR Overview">
+
+    <h2 id="citation">
+      Citation
+    </h2>
+    <pre class="bibtex">
+      <code>
+@inproceedings{yuan2022glamr,
+  title={GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras},
+  author={Yuan, Ye and Iqbal, Umar and Molchanov, Pavlo and Kitani, Kris and Kautz, Jan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022}
+}
+      </code></pre>
+
+  </div>
+</body>
+
+</html>

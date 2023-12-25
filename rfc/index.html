@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZEKLLQP31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZEKLLQP31');
+  </script>
+  
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis
+  </title>
+  <meta content="RFC" property="og:title" />
+  <meta content="Reinforcement learning has shown great promise for synthesizing realistic human behaviors by learning humanoid control policies from motion capture data. However, it is still very challenging to reproduce sophisticated human skills like ballet dance, or to stably imitate long-term human behaviors with complex transitions. The main difficulty lies in the dynamics mismatch between the humanoid model and real humans. That is, motions of real humans may not be physically possible for the humanoid model. To overcome the dynamics mismatch, we propose a novel approach, residual force control (RFC), that augments a humanoid control policy by adding external residual forces into the action space. During training, the RFC-based policy learns to apply residual forces to the humanoid to compensate for the dynamics mismatch and better imitate the reference motion. Experiments on a wide range of dynamic motions demonstrate that our approach outperforms state-of-the-art methods in terms of convergence speed and the quality of learned motions. Notably, we showcase a physics-based virtual character empowered by RFC that can perform highly agile ballet dance moves such as pirouette, arabesque and jeté. Furthermore, we propose a dual-policy control framework, where a kinematic policy and an RFC-based policy work in tandem to synthesize multi-modal infinite-horizon human motions without any task guidance or user input. Our approach is the first humanoid control method that successfully learns from a large-scale human motion dataset (Human3.6M) and generates diverse long-term motions." name="description" property="og:description" />
+  <meta content="https://www.ye-yuan.com/rfc" property="og:url" />
+  <meta name="keywords" content="Human Motion Imitation, Reinforcement Learning, Physics Simulation, Residual Force, DeepMimic, RFC">
+
+  <link rel="stylesheet" href="../assets/css/project_stylesheet.css">
+  <link href="../data/misc/favicon.ico" rel="shortcut icon">
+  <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../assets/academicons/css/academicons.min.css">
+
+  <script defer src="../assets/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="n-header">
+  </div>
+  <div class="n-title">
+    <h1>
+      Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis
+    </h1>
+  </div>
+  <div class="n-byline">
+    <div class="byline">
+      <ul class="authors">
+        <li>
+          <a href="https://www.ye-yuan.com/" target="_blank">Ye Yuan</a>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~kkitani/" target="_blank">Kris Kitani</a>
+        </li>
+      </ul>
+      <ul class="authors affiliations">
+        <li>
+          Carnegie Mellon University
+        </li>
+      </ul>
+      <ul class="authors venue">
+        <li>
+          NeurIPS 2020
+        </li>
+      </ul>
+      <ul class="authors links">
+        <li>
+          <a href="https://arxiv.org/pdf/2006.07364.pdf" target="_blank">
+            <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/XuzH1u78o1Y" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Video</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Khrylx/RFC" target="_blank">
+            <button class="btn"><i class="fab fa-github"></i> Code</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="n-article">
+    
+    <table style="width:100%;border:0px;border-spacing:5px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-bottom:20px;"><tbody>
+      <tr class="block_videos">
+        <td>
+          <video width=100% height=auto muted autoplay loop playsinline>
+            <source src="data/rfc_teaser1.mp4#t=0.001" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </td>
+        <td>
+          <video width=100% height=auto muted autoplay loop playsinline>
+            <source src="data/rfc_teaser2.mp4#t=0.001" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </td>
+      </tr>
+      <tr class="block_videos">
+        <td>
+          <video width=100% height=auto muted autoplay loop playsinline>
+            <source src="data/rfc_teaser3.mp4#t=0.001" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </td>
+        <td>
+          <video width=100% height=auto muted autoplay loop playsinline>
+            <source src="data/rfc_teaser4.mp4#t=0.001" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </td>
+      </tr>
+    </table>
+
+    <h2 id="abstract">
+      Abstract
+    </h2>
+    <p>
+      Reinforcement learning has shown great promise for synthesizing realistic human behaviors by learning humanoid control policies from motion capture data. However, it is still very challenging to reproduce sophisticated human skills like ballet dance, or to stably imitate long-term human behaviors with complex transitions. The main difficulty lies in the dynamics mismatch between the humanoid model and real humans. That is, motions of real humans may not be physically possible for the humanoid model. To overcome the dynamics mismatch, we propose a novel approach, residual force control (RFC), that augments a humanoid control policy by adding external residual forces into the action space. During training, the RFC-based policy learns to apply residual forces to the humanoid to compensate for the dynamics mismatch and better imitate the reference motion. Experiments on a wide range of dynamic motions demonstrate that our approach outperforms state-of-the-art methods in terms of convergence speed and the quality of learned motions. Notably, we showcase a physics-based virtual character empowered by RFC that can perform highly agile ballet dance moves such as pirouette, arabesque and jeté. Furthermore, we propose a dual-policy control framework, where a kinematic policy and an RFC-based policy work in tandem to synthesize multi-modal infinite-horizon human motions without any task guidance or user input. Our approach is the first humanoid control method that successfully learns from a large-scale human motion dataset (Human3.6M) and generates diverse long-term motions.
+    </p>
+
+    <h2>
+      Video
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/XuzH1u78o1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2 id="citation">
+      Citation
+    </h2>
+    <pre class="bibtex">
+      <code>
+@inproceedings{yuan2020residual,
+  title={Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis},
+  author={Yuan, Ye and Kitani, Kris},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}
+      </code>
+    </pre>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template adapted from <a href="https://nvlabs.github.io/GLAMR" target="_blank" style="font-size: small;">GLAMR</a>.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+  </div>
+</body>
+
+</html>

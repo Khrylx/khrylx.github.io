@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZEKLLQP31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZEKLLQP31');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    DLow: Diversifying Latent Flows for Diverse Human Motion Prediction
+  </title>
+  <meta content="DLow" property="og:title" />
+  <meta content="Deep generative models are often used for human motion prediction as they are able to model multi-modal data distributions and characterize diverse human behavior. While much care has been taken into designing and learning deep generative models, how to efficiently produce diverse samples from a deep generative model after it has been trained is still an under-explored problem. To obtain samples from a pretrained generative model, most existing generative human motion prediction methods draw a set of independent Gaussian latent codes and convert them to motion samples. Clearly, this random sampling strategy is not guaranteed to produce diverse samples for two reasons: (1) The independent sampling cannot force the samples to be diverse; (2) The sampling is based solely on likelihood which may only produce samples that correspond to the major modes of the data distribution. To address these problems, we propose a novel sampling method, Diversifying Latent Flows (DLow), to produce a diverse set of samples from a pretrained deep generative model. Unlike random (independent) sampling, the proposed DLow sampling method samples a single random variable and then maps it with a set of learnable mapping functions to a set of correlated latent codes. The correlated latent codes are then decoded into a set of correlated samples. During training, DLow uses a diversity-promoting prior over samples as an objective to optimize the latent mappings to improve sample diversity. The design of the prior is highly flexible and can be customized to generate diverse motions with common features (e.g., similar leg motion but diverse upper-body motion). Our experiments demonstrate that DLow outperforms state-of-the-art baseline methods in terms of sample diversity and accuracy." name="description" property="og:description" />
+  <meta content="https://www.ye-yuan.com/dlow" property="og:url" />
+  <meta name="keywords" content="Human Motion Prediction, Diverse Sampling, DLow">
+
+  <link rel="stylesheet" href="../assets/css/project_stylesheet.css">
+  <link href="../data/misc/favicon.ico" rel="shortcut icon">
+  <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../assets/academicons/css/academicons.min.css">
+
+  <script defer src="../assets/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="n-header">
+  </div>
+  <div class="n-title">
+    <h1>
+      DLow: Diversifying Latent Flows for Diverse Human Motion Prediction
+    </h1>
+  </div>
+  <div class="n-byline">
+    <div class="byline">
+      <ul class="authors">
+        <li>
+          <a href="https://www.ye-yuan.com/" target="_blank">Ye Yuan</a>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~kkitani/" target="_blank">Kris Kitani</a>
+        </li>
+      </ul>
+      <ul class="authors affiliations">
+        <li>
+          Carnegie Mellon University
+        </li>
+      </ul>
+      <ul class="authors venue">
+        <li>
+          ECCV 2020
+        </li>
+      </ul>
+      <ul class="authors links">
+        <li>
+          <a href="https://arxiv.org/pdf/2003.08386.pdf" target="_blank">
+            <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/c45ss6Tcb2A" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Talk</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/nVYGHnRB1_M" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Summary</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/64OEdSadb00" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Video</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Khrylx/DLow" target="_blank">
+            <button class="btn"><i class="fab fa-github"></i> Code</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="n-article">
+    
+    <img class="teaser_figure" src="data/dlow_teaser.png" alt="SimPoE Teaser" style="width:100%;">
+
+    <h2 id="abstract">
+      Abstract
+    </h2>
+    <p>
+      Deep generative models are often used for human motion prediction as they are able to model multi-modal data distributions and characterize diverse human behavior. While much care has been taken into designing and learning deep generative models, how to efficiently produce diverse samples from a deep generative model after it has been trained is still an under-explored problem. To obtain samples from a pretrained generative model, most existing generative human motion prediction methods draw a set of independent Gaussian latent codes and convert them to motion samples. Clearly, this random sampling strategy is not guaranteed to produce diverse samples for two reasons: (1) The independent sampling cannot force the samples to be diverse; (2) The sampling is based solely on likelihood which may only produce samples that correspond to the major modes of the data distribution. To address these problems, we propose a novel sampling method, Diversifying Latent Flows (DLow), to produce a diverse set of samples from a pretrained deep generative model. Unlike random (independent) sampling, the proposed DLow sampling method samples a single random variable and then maps it with a set of learnable mapping functions to a set of correlated latent codes. The correlated latent codes are then decoded into a set of correlated samples. During training, DLow uses a diversity-promoting prior over samples as an objective to optimize the latent mappings to improve sample diversity. The design of the prior is highly flexible and can be customized to generate diverse motions with common features (e.g., similar leg motion but diverse upper-body motion). Our experiments demonstrate that DLow outperforms state-of-the-art baseline methods in terms of sample diversity and accuracy.
+    </p>
+
+    <h2>
+      1min Summary
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/nVYGHnRB1_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>
+      10min Talk
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/c45ss6Tcb2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>
+      Results Video
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/64OEdSadb00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2 id="citation">
+      Citation
+    </h2>
+    <pre class="bibtex">
+      <code>
+@inproceedings{yuan2020dlow,
+  title={Dlow: Diversifying latent flows for diverse human motion prediction},
+  author={Yuan, Ye and Kitani, Kris},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  year={2020}
+}
+      </code>
+    </pre>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template adapted from <a href="https://nvlabs.github.io/GLAMR" target="_blank" style="font-size: small;">GLAMR</a>.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+  </div>
+</body>
+
+</html>

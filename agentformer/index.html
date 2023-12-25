@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZEKLLQP31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZEKLLQP31');
+  </script>
+  
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent Forecasting
+  </title>
+  <meta content="AgentFormer" property="og:title" />
+  <meta content="Predicting accurate future trajectories of multiple agents is essential for autonomous systems, but is challenging due to the complex interaction between agents and the uncertainty in each agent's future behavior. Forecasting multi-agent trajectories requires modeling two key dimensions: (1) time dimension, where we model the influence of past agent states over future states; (2) social dimension, where we model how the state of each agent affects others. Most prior methods model these two dimensions separately, e.g., they first use a temporal model to summarize features over time for each agent independently and then model the interaction of the summarized features with a social model. This approach is suboptimal since independent feature encoding over either the time or social dimension can result in a loss of information. Instead, we would prefer a method that allows an agent's state at one time to directly affect another agent's state at a future time. To this end, we propose a new Transformer, termed AgentFormer, that simultaneously models the time and social dimensions. The model leverages a sequence representation of multi-agent trajectories by flattening trajectory features across time and agents. Since standard attention operations disregard the agent identity of each element in the sequence, AgentFormer uses a novel agent-aware attention mechanism that preserves agent identities by attending to elements of the same agent differently than elements of other agents. Based on AgentFormer, we propose a stochastic multi-agent trajectory prediction model that can attend to features of any agent at any previous timestep when inferring an agent's future position. The latent intent of all agents is also jointly modeled, allowing the stochasticity in one agent's behavior to affect other agents. Extensive experiments show that our method significantly improves the state of the art on well-established pedestrian and autonomous driving datasets." name="description" property="og:description" />
+  <meta content="https://www.ye-yuan.com/agentformer" property="og:url" />
+  <meta name="keywords" content="Transformer, Multi-Agent Trajectory Forecasting, AgentFormer">
+
+  <link rel="stylesheet" href="../assets/css/project_stylesheet.css">
+  <link href="../data/misc/favicon.ico" rel="shortcut icon">
+  <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../assets/academicons/css/academicons.min.css">
+
+  <script defer src="../assets/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="n-header">
+  </div>
+  <div class="n-title">
+    <h1>
+      AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent Forecasting
+    </h1>
+  </div>
+  <div class="n-byline">
+    <div class="byline">
+      <ul class="authors">
+        <li>
+          <a href="https://www.ye-yuan.com/" target="_blank">Ye Yuan</a><sup>1</sup>
+        </li>
+        <li>
+          <a href="https://www.xinshuoweng.com/" target="_blank">Xinshuo Weng</a><sup>1</sup>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=9W0Bd00AAAAJ&hl=en" target="_blank">Yanglan Ou</a><sup>2</sup>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~kkitani/" target="_blank">Kris Kitani</a><sup>1</sup>
+        </li>
+      </ul>
+      <ul class="authors affiliations">
+        <li>
+          <sup>
+            1
+          </sup>
+          Carnegie Mellon University
+        </li>
+        <li>
+          <sup>
+            2
+          </sup>
+          Penn State University
+        </li>
+      </ul>
+      <ul class="authors venue">
+        <li>
+          ICCV 2021
+        </li>
+      </ul>
+      <ul class="authors links">
+        <li>
+          <a href="https://arxiv.org/pdf/2103.14023.pdf" target="_blank">
+            <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Khrylx/AgentFormer" target="_blank">
+            <button class="btn"><i class="fab fa-github"></i> Code</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="n-article">
+    
+    <img class="teaser_figure" src="data/agentformer_teaser.png" alt="AgentFormer Teaser" style="width:75%;">
+
+    <h2 id="abstract">
+      Abstract
+    </h2>
+    <p>
+      Predicting accurate future trajectories of multiple agents is essential for autonomous systems, but is challenging due to the complex interaction between agents and the uncertainty in each agent's future behavior. Forecasting multi-agent trajectories requires modeling two key dimensions: (1) <strong>time dimension</strong>, where we model the influence of past agent states over future states; (2) <strong>social dimension</strong>, where we model how the state of each agent affects others. Most prior methods model these two dimensions separately, e.g., they first use a temporal model to summarize features over time for each agent independently and then model the interaction of the summarized features with a social model. This approach is suboptimal since independent feature encoding over either the time or social dimension can result in a loss of information. Instead, we would prefer a method that allows an agent's state at one time to <strong>directly</strong> affect another agent's state at a future time. To this end, we propose a new Transformer, termed AgentFormer, that simultaneously models the time and social dimensions. The model leverages a sequence representation of multi-agent trajectories by flattening trajectory features across time and agents. Since standard attention operations disregard the agent identity of each element in the sequence, AgentFormer uses a novel agent-aware attention mechanism that preserves agent identities by attending to elements of the same agent differently than elements of other agents. Based on AgentFormer, we propose a stochastic multi-agent trajectory prediction model that can attend to features of any agent at any previous timestep when inferring an agent's future position. The latent intent of all agents is also jointly modeled, allowing the stochasticity in one agent's behavior to affect other agents. Extensive experiments show that our method significantly improves the state of the art on well-established pedestrian and autonomous driving datasets.
+    </p>
+    <p>
+      <strong>Important Note:</strong> We have recently noticed a <a href="https://github.com/Khrylx/AgentFormer/issues/5" target="_blank">normalization bug</a> in the code and after fixing it, the performance of our method is worse than the original numbers reported in the ICCV paper. For comparision, please use the correct numbers in the updated <a href="https://arxiv.org/abs/2103.14023" target="_blank">arXiv version</a>.
+    </p>
+
+    <h2>
+      Overview
+    </h2>
+    <img class="figure" src="data/overview.png" alt="AgentFormer Overview">
+
+    <h2>
+      Agent-Aware Attention
+    </h2>
+    <img class="figure" src="data/attention.png" alt="Agent-Aware Attention">
+
+    <h2>
+      Attention Visualization
+    </h2>
+    <img class="figure" src="data/vis_attn.png" alt="Attention Visualization">
+
+    <h2>
+      Trajectory Sample Visualization
+    </h2>
+    <img class="figure" src="data/vis_nus.png" alt="Trajectory Sample Visualization">
+
+    <h2 id="citation">
+      Citation
+    </h2>
+    <pre class="bibtex">
+      <code>
+@inproceedings{yuan2021agent,
+  title={AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent Forecasting},
+  author={Yuan, Ye and Weng, Xinshuo and Ou, Yanglan and Kitani, Kris},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2021}
+}
+      </code>
+    </pre>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template adapted from <a href="https://nvlabs.github.io/GLAMR" target="_blank" style="font-size: small;">GLAMR</a>.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+  </div>
+</body>
+
+</html>

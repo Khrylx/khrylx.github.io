@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZEKLLQP31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZEKLLQP31');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    Ego-Pose Estimation and Forecasting as Real-Time PD Control
+  </title>
+  <meta content="EgoPose" property="og:title" />
+  <meta content="We propose the use of a proportional-derivative (PD) control based policy learned via reinforcement learning (RL) to estimate and forecast 3D human pose from egocentric videos. The method learns directly from unsegmented egocentric videos and motion capture data consisting of various complex human motions (e.g., crouching, hopping, bending, and motion transitions). We propose a video-conditioned recurrent control technique to forecast physically-valid and stable future motions of arbitrary length. We also introduce a value function based fail-safe mechanism which enables our method to run as a single pass algorithm over the video data. Experiments with both controlled and in-the-wild data show that our approach outperforms previous art in both quantitative metrics and visual quality of the motions, and is also robust enough to transfer directly to real-world scenarios. Additionally, our time analysis shows that the combined use of our pose estimation and forecasting can run at 30 FPS, making it suitable for real-time applications." name="description" property="og:description" />
+  <meta content="https://www.ye-yuan.com/ego-pose" property="og:url" />
+  <meta name="keywords" content="Egocentric Human Pose Estimation, Physics Simulation, AR, VR, EgoPose, Ego-Pose">
+
+  <link rel="stylesheet" href="../assets/css/project_stylesheet.css">
+  <link href="../data/misc/favicon.ico" rel="shortcut icon">
+  <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../assets/academicons/css/academicons.min.css">
+
+  <script defer src="../assets/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="n-header">
+  </div>
+  <div class="n-title">
+    <h1>
+      Ego-Pose Estimation and Forecasting as Real-Time PD Control
+    </h1>
+  </div>
+  <div class="n-byline">
+    <div class="byline">
+      <ul class="authors">
+        <li>
+          <a href="https://www.ye-yuan.com/" target="_blank">Ye Yuan</a>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~kkitani/" target="_blank">Kris Kitani</a>
+        </li>
+      </ul>
+      <ul class="authors affiliations">
+        <li>
+          Carnegie Mellon University
+        </li>
+      </ul>
+      <ul class="authors venue">
+        <li>
+          ICCV 2019
+        </li>
+      </ul>
+      <ul class="authors links">
+        <li>
+          <a href="https://arxiv.org/pdf/1906.03173.pdf" target="_blank">
+            <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/968IIDZeWE0" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Video</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Khrylx/EgoPose" target="_blank">
+            <button class="btn"><i class="fab fa-github"></i> Code</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1vzxVHAtfvfIEDreqYvHulhtNwHcomotV/view?usp=sharing" target="_blank">
+            <button class="btn"><i class="fa fa-file-archive"></i> Data</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="n-article">
+    
+    <table style="width:100%;border:0px;border-spacing:5px 5px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-bottom:20px;"><tbody>
+      <tr class="block_videos">
+        <td>
+          <video width=100% height=auto muted autoplay loop playsinline>
+            <source src="data/egopose_estimate.mp4#t=0.001" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </td>
+        <td>
+          <video width=100% height=auto muted autoplay loop playsinline>
+            <source src="data/egopose_forecast.mp4#t=0.001" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </td>
+      </tr>
+      <tr class="block_videos">
+        
+      </tr>
+    </table>
+
+    <h2 id="abstract">
+      Abstract
+    </h2>
+    <p>
+      We propose the use of a proportional-derivative (PD) control based policy learned via reinforcement learning (RL) to estimate and forecast 3D human pose from egocentric videos. The method learns directly from unsegmented egocentric videos and motion capture data consisting of various complex human motions (e.g., crouching, hopping, bending, and motion transitions). We propose a video-conditioned recurrent control technique to forecast physically-valid and stable future motions of arbitrary length. We also introduce a value function based fail-safe mechanism which enables our method to run as a single pass algorithm over the video data. Experiments with both controlled and in-the-wild data show that our approach outperforms previous art in both quantitative metrics and visual quality of the motions, and is also robust enough to transfer directly to real-world scenarios. Additionally, our time analysis shows that the combined use of our pose estimation and forecasting can run at 30 FPS, making it suitable for real-time applications.
+    </p>
+
+    <h2>
+      Video
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/968IIDZeWE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2 id="citation">
+      Citation
+    </h2>
+    <pre class="bibtex">
+      <code>
+@inproceedings{yuan2019ego,
+  title={Ego-Pose Estimation and Forecasting as Real-Time PD Control},
+  author={Yuan, Ye and Kitani, Kris},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2019},
+  pages={10082--10092}
+}
+      </code>
+    </pre>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template adapted from <a href="https://nvlabs.github.io/GLAMR" target="_blank" style="font-size: small;">GLAMR</a>.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+  </div>
+</body>
+
+</html>

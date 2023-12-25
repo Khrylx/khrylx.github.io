@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZEKLLQP31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZEKLLQP31');
+  </script>
+  
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>
+    SimPoE: Simulated Character Control for 3D Human Pose Estimation
+  </title>
+  <meta content="SimPoE" property="og:title" />
+  <meta content="Accurate estimation of 3D human motion from monocular video requires modeling both kinematics (body motion without physical forces) and dynamics (motion with physical forces). To demonstrate this, we present SimPoE, a Simulation-based approach for 3D human Pose Estimation, which integrates image-based kinematic inference and physics-based dynamics modeling. SimPoE learns a policy that takes as input the current-frame pose estimate and the next image frame to control a physically-simulated character to output the next-frame pose estimate. The policy contains a learnable kinematic pose refinement unit that uses 2D keypoints to iteratively refine its kinematic pose estimate of the next frame. Based on this refined kinematic pose, the policy learns to compute dynamics-based control (e.g., joint torques) of the character to advance the current-frame pose estimate to the pose estimate of the next frame. This design couples the kinematic pose refinement unit with the dynamics-based control generation unit, which are learned jointly with reinforcement learning to achieve accurate and physically-plausible pose estimation. Furthermore, we propose a meta-control mechanism that dynamically adjusts the character's dynamics parameters based on the character state to attain more accurate pose estimates. Experiments on large-scale motion datasets demonstrate that our approach establishes the new state of the art in pose accuracy while ensuring physical plausibility." name="description" property="og:description" />
+  <meta content="https://www.ye-yuan.com/simpoe" property="og:url" />
+  <meta name="keywords" content="Physically-Plausible Human Pose Estimation, Physics Simulation, SimPoE">
+
+  <link rel="stylesheet" href="../assets/css/project_stylesheet.css">
+  <link href="../data/misc/favicon.ico" rel="shortcut icon">
+  <link href="../data/misc/favicon_apple.ico" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="../assets/academicons/css/academicons.min.css">
+
+  <script defer src="../assets/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+  <div class="n-header">
+  </div>
+  <div class="n-title">
+    <h1>
+      SimPoE: Simulated Character Control for 3D Human Pose Estimation
+    </h1>
+  </div>
+  <div class="n-byline">
+    <div class="byline">
+      <ul class="authors">
+        <li>
+          <a href="https://www.ye-yuan.com/" target="_blank">Ye Yuan</a><sup>1</sup>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&hl=en&oi=sra" target="_blank">Shih-En Wei</a><sup>2</sup>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~tsimon/" target="_blank">Tomas Simon</a><sup>2</sup>
+        </li>
+        <li>
+          <a href="http://www.cs.cmu.edu/~kkitani/" target="_blank">Kris Kitani</a><sup>1</sup>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en" target="_blank">Jason Saragih</a><sup>2</sup>
+        </li>
+      </ul>
+      <ul class="authors affiliations">
+        <li>
+          <sup>
+            1
+          </sup>
+          Carnegie Mellon University
+        </li>
+        <li>
+          <sup>
+            2
+          </sup>
+          Meta Reality Lab
+        </li>
+      </ul>
+      <ul class="authors venue">
+        <li>
+          CVPR 2021 (Oral)
+        </li>
+      </ul>
+      <ul class="authors links">
+        <li>
+          <a href="https://arxiv.org/pdf/2104.00683.pdf" target="_blank">
+            <button class="btn"><i class="fa fa-file-pdf"></i> Paper</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/icdsZfVBT80" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Talk</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/_0BtkjOrwX4" target="_blank">
+            <button class="btn"><i class="fab fa-youtube"></i> Video</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="n-article">
+    
+    <img class="teaser_figure" src="data/simpoe_teaser.png" alt="SimPoE Teaser" style="width:100%;">
+
+    <h2 id="abstract">
+      Abstract
+    </h2>
+    <p>
+      Accurate estimation of 3D human motion from monocular video requires modeling both kinematics (body motion without physical forces) and dynamics (motion with physical forces). To demonstrate this, we present SimPoE, a Simulation-based approach for 3D human Pose Estimation, which integrates image-based kinematic inference and physics-based dynamics modeling. SimPoE learns a policy that takes as input the current-frame pose estimate and the next image frame to control a physically-simulated character to output the next-frame pose estimate. The policy contains a learnable kinematic pose refinement unit that uses 2D keypoints to iteratively refine its kinematic pose estimate of the next frame. Based on this refined kinematic pose, the policy learns to compute dynamics-based control (e.g., joint torques) of the character to advance the current-frame pose estimate to the pose estimate of the next frame. This design couples the kinematic pose refinement unit with the dynamics-based control generation unit, which are learned jointly with reinforcement learning to achieve accurate and physically-plausible pose estimation. Furthermore, we propose a meta-control mechanism that dynamically adjusts the character's dynamics parameters based on the character state to attain more accurate pose estimates. Experiments on large-scale motion datasets demonstrate that our approach establishes the new state of the art in pose accuracy while ensuring physical plausibility.
+    </p>
+
+    <h2>
+      Overview
+    </h2>
+    <img class="figure" src="data/overview.png" alt="SimPoE Overview">
+
+    <h2>
+      5min Talk
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/icdsZfVBT80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>
+      Results Video
+    </h2>
+    <div class="video_wrapper shadow">
+      <iframe width="705" height="397" border-style=none src="https://www.youtube.com/embed/_0BtkjOrwX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>
+      Visualization
+    </h2>
+    <img class="figure" src="data/vis.png" alt="SimPoE Results Visualization">
+
+    <h2 id="citation">
+      Citation
+    </h2>
+    <pre class="bibtex">
+      <code>
+@inproceedings{yuan2021simpoe,
+  title={SimPoE: Simulated Character Control for 3D Human Pose Estimation},
+  author={Yuan, Ye and Wei, Shih-En and Simon, Tomas and Kitani, Kris and Saragih, Jason},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021}
+}
+      </code>
+    </pre>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template adapted from <a href="https://nvlabs.github.io/GLAMR" target="_blank" style="font-size: small;">GLAMR</a>.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+  </div>
+</body>
+
+</html>
