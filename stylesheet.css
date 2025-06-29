@@ -270,7 +270,6 @@ span.highlight {
 
 .research_thumbnail {
   width: 100%;
-  height: 120px;
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -308,6 +307,19 @@ span.highlight {
   font-style: italic;
 }
 
+/* Desktop styles - fixed height */
+@media (min-width: 676px) {
+  .research_thumbnail {
+    height: 120px;
+  }
+  
+  .research_thumbnail video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 675px) {
   .selected_research_grid {
@@ -316,7 +328,13 @@ span.highlight {
   }
   
   .research_thumbnail {
-    height: 100px;
+    max-height: 300px;
+  }
+
+  .research_thumbnail video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
