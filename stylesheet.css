@@ -301,6 +301,13 @@ span.highlight {
   color: #f09228;
 }
 
+.research_conference {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+  font-style: italic;
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 675px) {
   .selected_research_grid {
