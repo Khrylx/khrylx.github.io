@@ -63,15 +63,33 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* ===== Color palette ===== */
+:root {
+  --color-link: #1a6dd4;
+  --color-hover: #e08520;
+  --color-accent: #1e3a5f;
+  --color-highlight: #c0392b;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-shadow-hover: rgba(0, 0, 0, 0.15);
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-bg-hover: rgba(26, 109, 212, 0.03);
+  --color-nav-bg: rgba(255, 255, 255, 0.92);
+}
+
 a {
-  color: #1772d0;
+  color: var(--color-link);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: var(--color-hover);
   text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -108,10 +126,84 @@ name {
   display: inline-block;
 }
 
+/* ===== Sticky Navigation ===== */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.sticky-nav.scrolled {
+  box-shadow: 0 2px 12px var(--color-shadow);
+}
+
+.sticky-nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.sticky-nav-name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #222;
+  white-space: nowrap;
+}
+
+.sticky-nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.sticky-nav-links a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.sticky-nav-links a:hover {
+  color: var(--color-hover);
+}
+
+@media (max-width: 675px) {
+  .sticky-nav-name {
+    display: none;
+  }
+
+  .sticky-nav-links {
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sticky-nav-links a {
+    font-size: 12px;
+  }
+}
+
+/* ===== Intro section ===== */
 .intro {
   padding:20px;
   width:68%;
   vertical-align:middle;
+}
+
+.intro_paragraph {
+  line-height: 1.6em;
 }
 
 .headshort {
@@ -130,12 +222,13 @@ name {
   }
 }
 
+/* ===== News section ===== */
 .news_date1 {
   padding: 0px 3px 0px 20px;
   width: 0px;
   vertical-align: top;
   line-height: 1.5em;
-  color: darkblue;
+  color: var(--color-accent);
   white-space: nowrap;
 }
 
@@ -145,7 +238,7 @@ name {
   vertical-align: top;
   text-align: right;
   line-height: 1.5em;
-  color: darkblue;
+  color: var(--color-accent);
   white-space: nowrap;
 }
 
@@ -156,11 +249,22 @@ name {
 }
 
 .news_conf {
-  color: darkblue;
+  color: var(--color-accent);
+  font-weight: 600;
 }
 
 .news_oral {
-  color: darkblue;
+  color: var(--color-accent);
+}
+
+/* ===== Paper entries ===== */
+.paper_entry {
+  transition: background-color 0.2s ease;
+  border-radius: 8px;
+}
+
+.paper_entry:hover {
+  background-color: var(--color-bg-hover);
 }
 
 .paper_tb {
@@ -171,17 +275,29 @@ name {
 
 .paper_tb video {
   border-radius: 10px;
-	border: 1px solid black;
+  border: 1px solid var(--color-border);
   overflow: hidden;
-  box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 16px var(--color-shadow);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.paper_entry:hover .paper_tb video {
+  box-shadow: 0 6px 20px var(--color-shadow-hover);
+  transform: translateY(-1px);
 }
 
 .paper_tb img {
   width: 100%;
   border-radius: 10px;
-	border: 1px solid black;
+  border: 1px solid var(--color-border);
   overflow: hidden;
-  box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 16px var(--color-shadow);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.paper_entry:hover .paper_tb img {
+  box-shadow: 0 6px 20px var(--color-shadow-hover);
+  transform: translateY(-1px);
 }
 
 .paper_conf {
@@ -189,7 +305,10 @@ name {
 }
 
 .paper_oral {
-  color: red;
+  color: var(--color-highlight);
+}
+
+.paper_year {
 }
 
 .tb_one {
@@ -209,6 +328,14 @@ name {
   line-height: 22px;
 }
 
+.paper_details papertitle {
+  transition: color 0.2s ease;
+}
+
+.paper_entry:hover .paper_details papertitle {
+  color: var(--color-link);
+}
+
 @media (max-width: 675px) {
   .paper_entry td {
     display: block;
@@ -224,14 +351,19 @@ name {
     padding: 15px 20px 15px 20px;
     width: 90%;
   }
+
+  .paper_entry:hover {
+    background-color: transparent;
+  }
 }
 
+/* ===== Service section ===== */
 .service_name {
   padding: 0px 10px 0px 20px;
   width: 0px;
   vertical-align: top;
   line-height: 1.5em;
-  color: darkblue;
+  color: var(--color-accent);
   white-space: nowrap;
 }
 
@@ -241,6 +373,7 @@ name {
   line-height: 1.5em;
 }
 
+/* ===== Misc ===== */
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -251,7 +384,7 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Selected Research Section Styles */
+/* ===== Selected Research Section ===== */
 .selected_research_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -265,7 +398,7 @@ span.highlight {
 }
 
 .research_item:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .research_thumbnail {
@@ -273,13 +406,13 @@ span.highlight {
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px var(--color-shadow);
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .research_item:hover .research_thumbnail {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px var(--color-shadow-hover);
 }
 
 .research_thumbnail img,
@@ -297,7 +430,7 @@ span.highlight {
 }
 
 .research_item:hover .research_name {
-  color: #f09228;
+  color: var(--color-hover);
 }
 
 .research_conference {
@@ -312,7 +445,7 @@ span.highlight {
   .research_thumbnail {
     height: 120px;
   }
-  
+
   .research_thumbnail video {
     width: 100%;
     height: 100%;
@@ -326,7 +459,7 @@ span.highlight {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
-  
+
   .research_thumbnail {
     max-height: 300px;
   }

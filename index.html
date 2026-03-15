@@ -30,6 +30,17 @@
 </head>
 
 <body>
+  <nav class="sticky-nav" id="sticky-nav">
+    <div class="sticky-nav-inner">
+      <span class="sticky-nav-name">Ye Yuan</span>
+      <div class="sticky-nav-links">
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Service</a>
+      </div>
+    </div>
+  </nav>
   <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -61,7 +72,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-            <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
+            <td id="news" style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
               <heading>News</heading>
             </td>
           </tr>
@@ -487,7 +498,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-            <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
+            <td id="research" style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
               <heading>Selected Research</heading>
             </td>
           </tr>
@@ -590,7 +601,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-            <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
+            <td id="publications" style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
               <heading>Publications</heading>
             </td>
           </tr>
@@ -1886,7 +1897,7 @@
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-            <td style="padding:20px 20px 20px 20px;width:100%;vertical-align:middle;">
+            <td id="service" style="padding:20px 20px 20px 20px;width:100%;vertical-align:middle;">
               <heading>Service</heading>
             </td>
           </tr>
@@ -1940,6 +1951,11 @@
       </td>
     </tr>
   </table>
+  <script>
+    window.addEventListener('scroll', function() {
+      document.getElementById('sticky-nav').classList.toggle('scrolled', window.scrollY > 10);
+    });
+  </script>
 </body>
 
 </html>
