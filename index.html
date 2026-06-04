@@ -520,6 +520,19 @@
           <tr>
             <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
               <div class="selected_research_grid">
+                <!-- GRAIL -->
+                <div class="research_item">
+                  <a href="#grail" style="text-decoration: none; color: inherit;">
+                    <div class="research_thumbnail">
+                      <video muted autoplay loop playsinline>
+                        <source src="data/thumbnails/grail_tn.mp4#t=0.001" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="research_name">GRAIL</div>
+                    <div class="research_conference">arXiv'26</div>
+                  </a>
+                </div>
+
                 <!-- SONIC -->
                 <div class="research_item">
                   <a href="#sonic" style="text-decoration: none; color: inherit;">
@@ -621,45 +634,6 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr class="paper_entry" id="motionbricks">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/motionbricks_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://research.nvidia.com/labs/gear/motionbricks/">
-                <papertitle>MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://tingwuwang.github.io/">Tingwu Wang</a>,
-              Olivier Dionne,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=vWj0dh0AAAAJ">Michael De Ruyter</a>,
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/david-minor-992295a8">David Minor</a>,
-              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>,
-              Kaifeng Zhao,
-              <a class="wrap" target="_blank" href="https://mathis.petrovich.fr/">Mathis Petrovich</a>,
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=O_PbKNMAAAAJ">Chenran Li</a>,
-              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
-              Brian Robison,
-              Xavier Blackwell,
-              Bernardo Antoniazzi,
-              <a class="wrap" target="_blank" href="https://xbpeng.github.io/">Xue Bin Peng</a>,
-              <a class="wrap" target="_blank" href="https://yukezhu.me">Yuke Zhu</a>,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=gMcT0QoAAAAJ">Simon Yuen</a>
-              <br>
-              <span class="paper_conf">SIGGRAPH</span>, <span class="paper_year">2026</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/gear/motionbricks/"><i class="fa fa-globe"></i> project page</a> |
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2604.24833"><i class="fa fa-file-pdf"></i> arXiv</a> |
-              <a class="wrap" target="_blank" href="https://github.com/NVlabs/GR00T-WholeBodyControl/tree/main/motionbricks"><i class="fab fa-github"></i> code</a>
-            </td>
-          </tr>
-
           <tr class="paper_entry" id="grail">
             <td class="paper_tb">
               <div class="tb_one">
@@ -703,6 +677,45 @@
               <a class="wrap" target="_blank" href="https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Locomanipulation-GRAIL"><i class="fa fa-database"></i> dataset</a>
               <br>
               <span class="paper_note">Fully digital until deployment: GRAIL uses 3D assets and video foundation model priors to turn compute into robot-compatible demonstrations and deployable humanoid policies, scaling beyond teleoperation and motion capture.</span>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="motionbricks">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/motionbricks_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://research.nvidia.com/labs/gear/motionbricks/">
+                <papertitle>MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://tingwuwang.github.io/">Tingwu Wang</a>,
+              Olivier Dionne,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=vWj0dh0AAAAJ">Michael De Ruyter</a>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/david-minor-992295a8">David Minor</a>,
+              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>,
+              Kaifeng Zhao,
+              <a class="wrap" target="_blank" href="https://mathis.petrovich.fr/">Mathis Petrovich</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=O_PbKNMAAAAJ">Chenran Li</a>,
+              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
+              Brian Robison,
+              Xavier Blackwell,
+              Bernardo Antoniazzi,
+              <a class="wrap" target="_blank" href="https://xbpeng.github.io/">Xue Bin Peng</a>,
+              <a class="wrap" target="_blank" href="https://yukezhu.me">Yuke Zhu</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=gMcT0QoAAAAJ">Simon Yuen</a>
+              <br>
+              <span class="paper_conf">SIGGRAPH</span>, <span class="paper_year">2026</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/gear/motionbricks/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2604.24833"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://github.com/NVlabs/GR00T-WholeBodyControl/tree/main/motionbricks"><i class="fab fa-github"></i> code</a>
             </td>
           </tr>
 
