@@ -311,14 +311,6 @@ name {
 .paper_year {
 }
 
-.paper_note {
-  display: block;
-  margin-top: 3px;
-  color: #555;
-  font-size: 13px;
-  line-height: 18px;
-}
-
 .tb_one {
   width: 100%;
   position: relative;
