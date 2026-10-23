@@ -651,11 +651,24 @@
           <tr>
             <td id="publications" style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle;">
               <heading>Publications</heading>
+              <nav class="publication-topics" aria-label="Publication topics">
+                <a href="#topic-robotics">Robotics &amp; Embodied AI</a>
+                <a href="#topic-3d-foundation-models">3D Foundation Models</a>
+                <a href="#topic-misc">Misc</a>
+              </nav>
             </td>
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="publications-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          <tbody id="publications-robotics" aria-labelledby="topic-robotics">
+
+          <tr class="publication-topic-heading">
+            <td colspan="2">
+              <h2 id="topic-robotics">Robotics &amp; Embodied AI</h2>
+            </td>
+          </tr>
 
           <tr class="paper_entry" id="sonic">
             <td class="paper_tb">
@@ -752,6 +765,558 @@
             </td>
           </tr>
 
+          <tr class="paper_entry" id="viral">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/viral_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://viral-humanoid.github.io/">
+                <papertitle>VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://tairanhe.com/">Tairan He</a>*,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/zi-wang-b675aa236">Zi Wang</a>*,
+              <a class="wrap" target="_blank" href="https://haoruxue.github.io/">Haoru Xue</a>*,
+              <a class="wrap" target="_blank" href="https://www.qingweiben.com/">Qingwei Ben</a>*,
+              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://wenlixiao-cs.github.io/">Wenli Xiao</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=5lwj5vIAAAAJ">Xingye Da</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=U9WUBC4AAAAJ">Fernando Castañeda</a>,
+              <a class="wrap" target="_blank" href="https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html">Shankar Sastry</a>,
+              <a class="wrap" target="_blank" href="https://www.ri.cmu.edu/ri-faculty/changliu-liu/">Changliu Liu</a>,
+              <a class="wrap" target="_blank" href="https://www.guanyashi.com/">Guanya Shi</a>,
+              <a class="wrap" target="_blank" href="https://jimfan.me">Linxi "Jim" Fan</a>†,
+              <a class="wrap" target="_blank" href="https://yukezhu.me">Yuke Zhu</a>† &nbsp; (*Equal Contribution, †Project Leads)
+              <br>
+              <span class="paper_conf">CVPR</span>, <span class="paper_year">2026</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://viral-humanoid.github.io/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2511.15200"><i class="fa fa-file-pdf"></i> arXiv</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="chip">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/chip_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://nvlabs.github.io/CHIP/">
+                <papertitle>CHIP: Adaptive Compliance for Humanoid Control through Hindsight Perturbation</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://ericcsr.github.io/">Sirui Chen</a>*,
+              <a class="wrap" target="_blank" href="https://zi-ang-cao.github.io/">Zi-Ang Cao</a>*,
+              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=U9WUBC4AAAAJ">Fernando Castañeda</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=O_PbKNMAAAAJ">Chenran Li</a>,
+              <a class="wrap" target="_blank" href="https://tingwuwang.github.io/">Tingwu Wang</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://jimfan.me">Linxi "Jim" Fan</a>,
+              <a class="wrap" target="_blank" href="https://profiles.stanford.edu/c-karen-liu">C. Karen Liu</a>†,
+              <a class="wrap" target="_blank" href="https://yukezhu.me">Yuke Zhu</a>† &nbsp; (*Equal Contribution, †Project Leads)
+              <br>
+              <span class="paper_conf">arXiv</span>, <span class="paper_year">2025</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/CHIP/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2512.14689"><i class="fa fa-file-pdf"></i> arXiv</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="pdc">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/pdc_tn.gif">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://zhengyiluo.github.io/PDC">
+                <papertitle>Emergent Active Perception and Dexterity of Simulated Humanoids from Visual Reinforcement Learning</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://tesslerc.github.io/">Chen Tessler</a>,
+              <a class="wrap" target="_blank" href="https://toruowo.github.io/">Toru Lin</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://tairanhe.github.io/">Tairan He</a>,
+              <a class="wrap" target="_blank" href="https://www.wenlixiao.com/">Wenli Xiao</a>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/kelly-guo-18316982/?originalSubdomain=ca">Yunrong Guo</a>,
+              <a class="wrap" target="_blank" href="https://chechiklab.biu.ac.il/~gal/">Gal Chechik</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
+              <a class="wrap" target="_blank" href="https://jimfan.me/">Jim Fan</a>,
+              <a class="wrap" target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+              <br>
+              <span class="paper_conf">arXiv</span>, <span class="paper_year">2025</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/PDC"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.12278"><i class="fa fa-file-pdf"></i> arXiv</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="harmon">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/harmon_tn.jpg">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://ut-austin-rpl.github.io/Harmon/">
+                <papertitle>Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhenyujiang.me/">Zhenyu Jiang</a>,
+              <a class="wrap" target="_blank" href="https://xieleo5.github.io/">Yuqi Xie</a>,
+              <a class="wrap" target="_blank" href="https://lijinhan21.github.io/">Jinhan Li</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://zhuyifengzju.github.io/">Yifeng Zhu</a>,
+              <a class="wrap" target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
+              <br>
+              <span class="paper_conf">CoRL</span>, <span class="paper_year">2024</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://ut-austin-rpl.github.io/Harmon/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2410.12773"><i class="fa fa-file-pdf"></i> arXiv</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="smplolympics">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/smplolympics_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://smplolympics.github.io/SMPLOlympics">
+                <papertitle>SMPLOlympics: Sports Environments for Physically Simulated Humanoids</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://jiashunwang.github.io/">Jiashun Wang</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=KhEDSsAAAAAJ&hl=en">Kangni Liu</a>,
+              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>,
+              <a class="wrap" target="_blank" href="https://tesslerc.github.io/">Chen Tessler</a>,
+              <a class="wrap" target="_blank" href="https://wangjingbo1219.github.io/">Jingbo Wang</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://www.jinkuncao.com/">Jinkun Cao</a>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/zihui-liu-327015224/">Zihui Lin</a>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/franklinwayne/">Fengyi Wang</a>,
+              <a class="wrap" target="_blank" href="https://www.cs.cmu.edu/~jkh/">Jessica Hodgins</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">arXiv</span>, <span class="paper_year">2024</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://smplolympics.github.io/SMPLOlympics"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2407.00187"><i class="fa fa-file-pdf"></i> arXiv</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="pacer+">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/pacer+_tn.gif">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2024/html/Wang_PACER_On-Demand_Pedestrian_Animation_Controller_in_Driving_Scenarios_CVPR_2024_paper.html">
+                <papertitle>PACER+: On-Demand Pedestrian Animation Controller in Driving Scenarios</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://wangjingbo1219.github.io/">Jingbo Wang</a>*,
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>*,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://yixuanli98.github.io/">Yixuan Li</a>,
+              <a class="wrap" target="_blank" href="https://daibo.info/">Bo Dai</a> &nbsp; (*Equal contribution)
+              <br>
+              <span class="paper_conf">CVPR</span>, <span class="paper_year">2024</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2404.19722"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/Pq10Q_ZBOrw"><i class="fab fa-youtube"></i> video</a> |
+              <a class="wrap" target="_blank" href="https://github.com/IDC-Flash/PacerPlus"><i class="fab fa-github"></i> code</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="vid2player3d">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/vid2player3d_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://research.nvidia.com/labs/toronto-ai/vid2player3d/">
+                <papertitle>Learning Physically Simulated Tennis Skills from Broadcast Videos</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/makoviychuk-viktor-9199988/">Viktor Makoviychuk</a>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/kelly-guo-18316982/?originalSubdomain=ca">Yunrong Guo</a>,
+              <a class="wrap" target="_blank" href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>,
+              <a class="wrap" target="_blank" href="https://xbpeng.github.io/">Xue Bin Peng</a>,
+              <a class="wrap" target="_blank" href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>
+              <br>
+              <span class="paper_conf">SIGGRAPH</span>, <span class="paper_year">2023</span> &nbsp <strong class="wrap paper_oral">(Best Paper Honorable Mention)</strong>
+              <br>
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/vid2player3d/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/vid2player3d/data/tennis_skills_main.pdf"><i class="fa fa-file-pdf"></i> paper</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/ZZVKrNs7_mk"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="trace_pace">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/trace_pace_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://research.nvidia.com/labs/toronto-ai/trace-pace/">
+                <papertitle>Trace and Pace: Controllable Pedestrian Animation via Guided Trajectory Diffusion</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>*,
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>*,
+              <a class="wrap" target="_blank" href="https://xbpeng.github.io/">Xue Bin Peng</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
+              Karsten Kreis,
+              <a class="wrap" target="_blank" href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>,
+              <a class="wrap" target="_blank" href="https://orlitany.github.io/">Or Litany</a> &nbsp; (*Equal contribution)
+              <br>
+              <span class="paper_conf">CVPR</span>, <span class="paper_year">2023</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/trace-pace/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2304.01893"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/trace-pace/supp.html"><i class="fab fa-youtube"></i> demo</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="rgb_nerf">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/rgb_nerf_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://ngp-mpc.github.io/">
+                <papertitle>RGB-Only Reconstruction of Tabletop Scenes for Collision-Free Manipulator Control</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://recordmp3.github.io/">Zhenggang Tang</a>,
+              <a class="wrap" target="_blank" href="https://balakumar-s.github.io/">Balakumar Sundaralingam</a>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/jonathan-tremblay">Jonathan Tremblay</a>,
+              <a class="wrap" target="_blank" href="https://wenbowen123.github.io/">Bowen Wen</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/stephen-tyree">Stephen Tyree</a>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/charles-loop">Charles Loop</a>,
+              <a class="wrap" target="_blank" href="https://www.alexander-schwing.de/">Alexander Schwing</a>,
+              <a class="wrap" target="_blank" href="https://cecas.clemson.edu/~stb/">Stan Birchfield</a>
+              <br>
+              <span class="paper_conf">ICRA</span>, <span class="paper_year">2023</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://ngp-mpc.github.io/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2210.11668"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/Bn1w9y5aYYg"><i class="fab fa-youtube"></i> video</a> |
+              <a class="wrap" target="_blank" href="https://drive.google.com/drive/folders/15Ch7pJM8znw8l4-wHu6rJvDdwRoNqI8l?usp=share_link"><i class="fa fa-file-archive"></i> data</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="embody_scene">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/embody_scene.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://embodiedscene.github.io/embodiedpose/">
+                <papertitle>Embodied Scene-aware Human Pose Estimation</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://sh8.io/">Shun Iwase</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">NeurIPS</span>, <span class="paper_year">2022</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://embodiedscene.github.io/embodiedpose/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2206.09106"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/8Ae0xzqAtm8"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="transform2act">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/transform2act_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://sites.google.com/view/transform2act">
+                <papertitle>Transform2Act: Learning a Transform-and-Control Policy for Efficient Agent Design</papertitle>
+              </a>
+              <br>
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://yudasong.github.io/">Yuda Song</a>,
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://wensun.github.io/">Wen Sun</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">ICLR</span>, <span class="paper_year">2022</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation - Top 1.6%)</strong>
+              <br>
+              <a class="wrap" target="_blank" href="https://sites.google.com/view/transform2act"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2110.03659"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://openreview.net/forum?id=UcDUxjPYWSr"><i class="fa fa-file-pdf"></i> openreview</a> |
+              <a class="wrap" target="_blank" href="https://github.com/Khrylx/Transform2Act"><i class="fab fa-github"></i> code</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="online_meta">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/online_meta_tn.png" style="position: relative;clip: rect(50px,50px,0px,0px);">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://arxiv.org/abs/2204.01925">
+                <papertitle>Online No-regret Model-Based Meta RL for Personalized Navigation</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://yudasong.github.io/">Yuda Song</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://wensun.github.io/">Wen Sun</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">Learning for Dynamics & Control (L4DC)</span>, <span class="paper_year">2022</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2204.01925"><i class="fa fa-file-pdf"></i> paper</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="agent_design">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/agent_design_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://www.zhengyiluo.com/projects/agent_design/">
+                <papertitle>From Universal Humanoid Control to Automatic Physically Valid Character Creation</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://www.cs.cmu.edu/~kkitani/">Kris M. Kitani</a>
+              <br>
+              <span class="paper_conf">arXiv</span>, <span class="paper_year">2022</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/projects/agent_design/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2206.09286"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://www.youtube.com/watch?v=uC0P2iB56kM"><i class="fab fa-youtube"></i> video</a> |
+              <a class="wrap" target="_blank" href="https://github.com/ZhengyiLuo/UHC"><i class="fab fa-github"></i> code</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="kin_poly">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/kinpoly_tn.gif">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://zhengyiluo.github.io/projects/kin_poly/">
+                <papertitle>Dynamics-Regulated Kinematic Policy for Egocentric Pose Estimation</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://ryohachiuma.github.io/">Ryo Hachiuma</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">NeurIPS</span>, <span class="paper_year">2021</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/projects/kin_poly/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2106.05969"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/yEiK9K1N-zw"><i class="fab fa-youtube"></i> video</a> |
+              <a class="wrap" target="_blank" href="https://github.com/KlabCMU/kin-poly"><i class="fab fa-github"></i> code</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="simpoe">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/simpoe_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://www.ye-yuan.com/simpoe">
+                <papertitle>SimPoE: Simulated Character Control for 3D Human Pose Estimation</papertitle>
+              </a>
+              <br>
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&hl=en&oi=sra">Shih-En Wei</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en">Jason Saragih</a>
+              <br>
+              <span class="paper_conf">CVPR</span>, <span class="paper_year">2021</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation - Top 4.2%)</strong>
+              <br>
+              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/simpoe"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2104.00683"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/icdsZfVBT80"><i class="fab fa-youtube"></i> talk</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/_0BtkjOrwX4"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="rfc">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/rfc_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://www.ye-yuan.com/rfc">
+                <papertitle>Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis</papertitle>
+              </a>
+              <br>
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">NeurIPS</span>, <span class="paper_year">2020</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/rfc"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2006.07364"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/XuzH1u78o1Y"><i class="fab fa-youtube"></i> video</a> |
+              <a class="wrap" target="_blank" href="https://github.com/Khrylx/RFC"><i class="fab fa-github"></i> code</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="ego_pose">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/egopose_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://www.ye-yuan.com/ego-pose">
+                <papertitle>Ego-Pose Estimation and Forecasting as Real-Time PD Control</papertitle>
+              </a>
+              <br>
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">ICCV</span>, <span class="paper_year">2019</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/ego-pose"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/1906.03173"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/968IIDZeWE0"><i class="fab fa-youtube"></i> video</a> |
+              <a class="wrap" target="_blank" href="https://github.com/Khrylx/EgoPose"><i class="fab fa-github"></i> code</a> |
+              <a class="wrap" target="_blank" href="https://drive.google.com/file/d/1vzxVHAtfvfIEDreqYvHulhtNwHcomotV/view?usp=sharing"><i class="fa fa-file-archive"></i> data</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="gailpose">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/gailpose_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ye_Yuan_3D_Ego-Pose_Estimation_ECCV_2018_paper.pdf">
+                <papertitle>3D Ego-Pose Estimation via Imitation Learning</papertitle>
+              </a>
+              <br>
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
+              <br>
+              <span class="paper_conf">ECCV</span>, <span class="paper_year">2018</span>
+              <br>
+              <a class="wrap" target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ye_Yuan_3D_Ego-Pose_Estimation_ECCV_2018_paper.pdf"><i class="fa fa-file-pdf"></i> paper</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/a9GsGUpjxUs"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="modular">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/modular_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://publications.ri.cmu.edu/computational-abstractions-for-interactive-design-of-robotic-devices">
+                <papertitle>Computational Abstractions for Interactive Design of Robotic Devices</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://www.cs.cmu.edu/~rutad/">Ruta Desai</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://crl.ethz.ch/people/coros/">Stelian Coros</a>
+              <br>
+              <span class="paper_conf">ICRA</span>, <span class="paper_year">2017</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://publications.ri.cmu.edu/computational-abstractions-for-interactive-design-of-robotic-devices"><i class="fa fa-file-pdf"></i> paper</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/PGpTsQtznw4"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          </tbody>
+
+          <tbody id="publications-3d-foundation-models" aria-labelledby="topic-3d-foundation-models">
+
+          <tr class="publication-topic-heading">
+            <td colspan="2">
+              <h2 id="topic-3d-foundation-models">3D Foundation Models</h2>
+            </td>
+          </tr>
+
           <tr class="paper_entry" id="motionbricks">
             <td class="paper_tb">
               <div class="tb_one">
@@ -837,71 +1402,213 @@
             </td>
           </tr>
 
-          <tr class="paper_entry" id="chip">
+          <tr class="paper_entry" id="dla">
             <td class="paper_tb">
               <div class="tb_one">
                 <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/chip_tn.mp4#t=0.001" type="video/mp4">
+                <source src="data/thumbnails/dla_tn.mp4#t=0.001" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
               </div>
             </td>
             <td class="paper_details">
-              <a target="_blank" href="https://nvlabs.github.io/CHIP/">
-                <papertitle>CHIP: Adaptive Compliance for Humanoid Control through Hindsight Perturbation</papertitle>
+              <a target="_blank" href="https://research.nvidia.com/labs/dair/dream-lift-animate/">
+                <papertitle>Dream, Lift, Animate: From Single Images to Animatable Gaussian Avatars</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://ericcsr.github.io/">Sirui Chen</a>*,
-              <a class="wrap" target="_blank" href="https://zi-ang-cao.github.io/">Zi-Ang Cao</a>*,
-              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=U9WUBC4AAAAJ">Fernando Castañeda</a>,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=O_PbKNMAAAAJ">Chenran Li</a>,
-              <a class="wrap" target="_blank" href="https://tingwuwang.github.io/">Tingwu Wang</a>,
+              <a class="wrap" target="_blank" href="https://mcbuehler.github.io/">Marcel C. Bühler</a>,
               <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://jimfan.me">Linxi "Jim" Fan</a>,
-              <a class="wrap" target="_blank" href="https://profiles.stanford.edu/c-karen-liu">C. Karen Liu</a>†,
-              <a class="wrap" target="_blank" href="https://yukezhu.me">Yuke Zhu</a>† &nbsp; (*Equal Contribution, †Project Leads)
+              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
+              <a class="wrap" target="_blank" href="https://huangyangyi.github.io/">Yangyi Huang</a>,
+              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
               <br>
-              <span class="paper_conf">arXiv</span>, <span class="paper_year">2025</span>
+              <span class="paper_conf">3DV</span>, <span class="paper_year">2026</span>
               <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/CHIP/"><i class="fa fa-globe"></i> project page</a> |
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2512.14689"><i class="fa fa-file-pdf"></i> arXiv</a>
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/dair/dream-lift-animate/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2507.15979"><i class="fa fa-file-pdf"></i> arXiv</a>
             </td>
           </tr>
 
-          <tr class="paper_entry" id="viral">
+          <tr class="paper_entry" id="genmo">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/genmo_tn.jpg">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://research.nvidia.com/labs/dair/genmo/">
+                <papertitle>GENMO: A GENeralist Model for Human MOtion</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://jeffli.site/">Jiefeng Li</a>,
+              <a class="wrap" target="_blank" href="https://www.jinkuncao.com/">Jinkun Cao</a>,
+              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>,
+              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>,
+              <strong class="wrap">Ye Yuan</strong>
+              <br>
+              <span class="paper_conf">ICCV</span>, <span class="paper_year">2025</span> &nbsp <strong class="wrap paper_oral">(Highlight)</strong>
+              <br>
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/dair/genmo/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.01425"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/b2lCM3kLZPI"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="adahuman">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/adahuman_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://nvlabs.github.io/AdaHuman">
+                <papertitle>AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://huangyangyi.github.io/">Yangyi Huang</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
+              <br>
+              <span class="paper_conf">ICCV</span>, <span class="paper_year">2025</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/AdaHuman"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.24877"><i class="fa fa-file-pdf"></i> arXiv</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="simavatar">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/simavatar_tn.png">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://nvlabs.github.io/SimAvatar/">
+                <papertitle>SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>,
+              <a class="wrap" target="_blank" href="https://gdaviet.fr/">Gilles Daviet</a>,
+              <a class="wrap" target="_blank" href="https://jonathancleaf.com/">Jonathan Leaf</a>,
+              <a class="wrap" target="_blank" href="https://blog.mmacklin.com/about/">Miles Macklin</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
+              <br>
+              <span class="paper_conf">CVPR</span>, <span class="paper_year">2025</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/SimAvatar/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2412.09545"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://www.youtube.com/watch?v=qEwBY7LBW2Y"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="agg">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two">
+                  <img src="data/thumbnails/agg_tn.gif">
+                </div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://ir1d.github.io/AGG/">
+                <papertitle>AGG: Amortized Generative 3D Gaussians for Single Image to 3D</papertitle>
+              </a>
+              <br>
+              <a class="wrap" target="_blank" href="https://ir1d.github.io/">Dejia Xu</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://mortezamardani.github.io/mardani/">Morteza Mardani</a>,
+              <a class="wrap" target="_blank" href="https://sifeiliu.net/">Sifei Liu</a>,
+              <a class="wrap" target="_blank" href="https://tsong.me/">Jiaming Song</a>,
+              <a class="wrap" target="_blank" href="https://express.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
+              <a class="wrap" target="_blank" href="http://latentspace.cc/">Arash Vahdat</a>
+              <br>
+              <span class="paper_conf">TMLR</span>, <span class="paper_year">2024</span>
+              <br>
+              <a class="wrap" target="_blank" href="https://ir1d.github.io/AGG/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2401.04099"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/jkwmp2UH0Ug"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="gavatar">
             <td class="paper_tb">
               <div class="tb_one">
                 <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/viral_tn.mp4#t=0.001" type="video/mp4">
+                <source src="data/thumbnails/gavatar_tn.mp4#t=0.001" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
               </div>
             </td>
             <td class="paper_details">
-              <a target="_blank" href="https://viral-humanoid.github.io/">
-                <papertitle>VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation</papertitle>
+              <a target="_blank" href="https://nvlabs.github.io/GAvatar">
+                <papertitle>GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://tairanhe.com/">Tairan He</a>*,
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/zi-wang-b675aa236">Zi Wang</a>*,
-              <a class="wrap" target="_blank" href="https://haoruxue.github.io/">Haoru Xue</a>*,
-              <a class="wrap" target="_blank" href="https://www.qingweiben.com/">Qingwei Ben</a>*,
-              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
-              <a class="wrap" target="_blank" href="https://wenlixiao-cs.github.io/">Wenli Xiao</a>,
               <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=5lwj5vIAAAAJ">Xingye Da</a>,
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=U9WUBC4AAAAJ">Fernando Castañeda</a>,
-              <a class="wrap" target="_blank" href="https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html">Shankar Sastry</a>,
-              <a class="wrap" target="_blank" href="https://www.ri.cmu.edu/ri-faculty/changliu-liu/">Changliu Liu</a>,
-              <a class="wrap" target="_blank" href="https://www.guanyashi.com/">Guanya Shi</a>,
-              <a class="wrap" target="_blank" href="https://jimfan.me">Linxi "Jim" Fan</a>†,
-              <a class="wrap" target="_blank" href="https://yukezhu.me">Yuke Zhu</a>† &nbsp; (*Equal Contribution, †Project Leads)
+              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
+              <a class="wrap" target="_blank" href="https://huangyangyi.github.io/">Yangyi Huang</a>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>,
+              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a> &nbsp; (*Equal Contribution)
               <br>
-              <span class="paper_conf">CVPR</span>, <span class="paper_year">2026</span>
+              <span class="paper_conf">CVPR</span>, <span class="paper_year">2024</span> &nbsp <strong class="wrap paper_oral">(Highlight)</strong>
               <br>
-              <a class="wrap" target="_blank" href="https://viral-humanoid.github.io/"><i class="fa fa-globe"></i> project page</a> |
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2511.15200"><i class="fa fa-file-pdf"></i> arXiv</a>
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/GAvatar"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2312.11461"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/PbCF1HzrKrs"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          <tr class="paper_entry" id="physdiff">
+            <td class="paper_tb">
+              <div class="tb_one">
+                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
+                <source src="data/thumbnails/physdiff_tn.mp4#t=0.001" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+            </td>
+            <td class="paper_details">
+              <a target="_blank" href="https://nvlabs.github.io/PhysDiff">
+                <papertitle>PhysDiff: Physics-Guided Human Motion Diffusion Model</papertitle>
+              </a>
+              <br>
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://tsong.me/">Jiaming Song</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>,
+              <a class="wrap" target="_blank" href="http://latentspace.cc/">Arash Vahdat</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>
+              <br>
+              <span class="paper_conf">ICCV</span>, <span class="paper_year">2023</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation)</strong>
+              <br>
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/PhysDiff"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2212.02500"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/y8Tdcvzjfjg"><i class="fab fa-youtube"></i> video</a>
+            </td>
+          </tr>
+
+          </tbody>
+
+          <tbody id="publications-misc" aria-labelledby="topic-misc">
+
+          <tr class="publication-topic-heading">
+            <td colspan="2">
+              <h2 id="topic-misc">Misc</h2>
             </td>
           </tr>
 
@@ -937,122 +1644,6 @@
             </td>
           </tr>
 
-          <tr class="paper_entry" id="dla">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/dla_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://research.nvidia.com/labs/dair/dream-lift-animate/">
-                <papertitle>Dream, Lift, Animate: From Single Images to Animatable Gaussian Avatars</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://mcbuehler.github.io/">Marcel C. Bühler</a>,
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
-              <a class="wrap" target="_blank" href="https://huangyangyi.github.io/">Yangyi Huang</a>,
-              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>,
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
-              <br>
-              <span class="paper_conf">3DV</span>, <span class="paper_year">2026</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/dair/dream-lift-animate/"><i class="fa fa-globe"></i> project page</a> |
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2507.15979"><i class="fa fa-file-pdf"></i> arXiv</a>
-            </td>
-          </tr>
-
-
-          <tr class="paper_entry" id="genmo">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/genmo_tn.jpg">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://research.nvidia.com/labs/dair/genmo/">
-                <papertitle>GENMO: A GENeralist Model for Human MOtion</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://jeffli.site/">Jiefeng Li</a>, 
-              <a class="wrap" target="_blank" href="https://www.jinkuncao.com/">Jinkun Cao</a>, 
-              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>, 
-              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>, 
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>, 
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>, 
-              <strong class="wrap">Ye Yuan</strong>
-              <br>
-              <span class="paper_conf">ICCV</span>, <span class="paper_year">2025</span> &nbsp <strong class="wrap paper_oral">(Highlight)</strong>
-              <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/dair/genmo/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.01425"><i class="fa fa-file-pdf"></i> arXiv</a> |
-              <a class="wrap" target="_blank" href="https://youtu.be/b2lCM3kLZPI"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-          
-          <tr class="paper_entry" id="pdc">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/pdc_tn.gif">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://zhengyiluo.github.io/PDC">
-                <papertitle>Emergent Active Perception and Dexterity of Simulated Humanoids from Visual Reinforcement Learning</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>, 
-              <a class="wrap" target="_blank" href="https://tesslerc.github.io/">Chen Tessler</a>, 
-              <a class="wrap" target="_blank" href="https://toruowo.github.io/">Toru Lin</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://tairanhe.github.io/">Tairan He</a>, 
-              <a class="wrap" target="_blank" href="https://www.wenlixiao.com/">Wenli Xiao</a>, 
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/kelly-guo-18316982/?originalSubdomain=ca">Yunrong Guo</a>, 
-              <a class="wrap" target="_blank" href="https://chechiklab.biu.ac.il/~gal/">Gal Chechik</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>, 
-              <a class="wrap" target="_blank" href="https://jimfan.me/">Jim Fan</a>, 
-              <a class="wrap" target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
-              <br>
-              <span class="paper_conf">arXiv</span>, <span class="paper_year">2025</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/PDC"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.12278"><i class="fa fa-file-pdf"></i> arXiv</a>
-            </td>
-          </tr>
-          
-          <tr class="paper_entry" id="adahuman">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/adahuman_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://nvlabs.github.io/AdaHuman">
-                <papertitle>AdaHuman: Animatable Detailed 3D Human Generation with Compositional Multiview Diffusion</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://huangyangyi.github.io/">Yangyi Huang</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>, 
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>, 
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
-              <br>
-              <span class="paper_conf">ICCV</span>, <span class="paper_year">2025</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/AdaHuman"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.24877"><i class="fa fa-file-pdf"></i> arXiv</a>
-            </td>
-          </tr>
-          
           <tr class="paper_entry" id="geoman">
             <td class="paper_tb">
               <div class="tb_one">
@@ -1066,52 +1657,22 @@
                 <papertitle>GeoMan: Temporally Consistent Human Geometry Estimation using Image-to-Video Diffusion</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://gwang-kim.github.io/">Gwanghyun Kim</a>, 
-              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>, 
-              <a class="wrap" target="_blank" href="https://tianyeli.github.io/">Tianye Li</a>, 
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>, 
-              <a class="wrap" target="_blank" href="https://icl.snu.ac.kr/pi">Se Young Chun</a>, 
+              <a class="wrap" target="_blank" href="https://gwang-kim.github.io/">Gwanghyun Kim</a>,
+              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>,
+              <a class="wrap" target="_blank" href="https://tianyeli.github.io/">Tianye Li</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
+              <a class="wrap" target="_blank" href="https://icl.snu.ac.kr/pi">Se Young Chun</a>,
               <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
               <br>
               <span class="paper_conf">ICCV</span>, <span class="paper_year">2025</span>
               <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/dair/geoman"><i class="fa fa-globe"></i> project page</a> | 
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/dair/geoman"><i class="fa fa-globe"></i> project page</a> |
               <a class="wrap" target="_blank" href="https://arxiv.org/abs/2505.23085"><i class="fa fa-file-pdf"></i> arXiv</a>
             </td>
           </tr>
-          
-          <tr class="paper_entry" id="simavatar">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/simavatar_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://nvlabs.github.io/SimAvatar/">
-                <papertitle>SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>, 
-              <a class="wrap" target="_blank" href="https://gdaviet.fr/">Gilles Daviet</a>, 
-              <a class="wrap" target="_blank" href="https://jonathancleaf.com/">Jonathan Leaf</a>, 
-              <a class="wrap" target="_blank" href="https://blog.mmacklin.com/about/">Miles Macklin</a>, 
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>, 
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
-              <br>
-              <span class="paper_conf">CVPR</span>, <span class="paper_year">2025</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/SimAvatar/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2412.09545"><i class="fa fa-file-pdf"></i> arXiv</a> |
-              <a class="wrap" target="_blank" href="https://www.youtube.com/watch?v=qEwBY7LBW2Y"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-          
+
           <tr class="paper_entry" id="blade">
             <td class="paper_tb">
               <div class="tb_one">
@@ -1125,82 +1686,22 @@
                 <papertitle>BLADE: Single-view Body Mesh Estimation through Accurate Depth Estimation</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://mcmvmc.github.io/">Shengze Wang</a>, 
-              <a class="wrap" target="_blank" href="https://jeffli.site/">Jiefeng Li</a>, 
-              <a class="wrap" target="_blank" href="https://tianyeli.github.io/">Tianye Li</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://henryfuchs.web.unc.edu/">Henry Fuchs</a>, 
-              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/amri/author/shalini-de-mello/">Shalini De Mello</a>, 
+              <a class="wrap" target="_blank" href="https://mcmvmc.github.io/">Shengze Wang</a>,
+              <a class="wrap" target="_blank" href="https://jeffli.site/">Jiefeng Li</a>,
+              <a class="wrap" target="_blank" href="https://tianyeli.github.io/">Tianye Li</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://henryfuchs.web.unc.edu/">Henry Fuchs</a>,
+              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/amri/author/shalini-de-mello/">Shalini De Mello</a>,
               <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/amri/author/michael-stengel/">Michael Stengel</a>
               <br>
               <span class="paper_conf">CVPR</span>, <span class="paper_year">2025</span>
               <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/amri/projects/blade/"><i class="fa fa-globe"></i> project page</a> | 
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/amri/projects/blade/"><i class="fa fa-globe"></i> project page</a> |
               <a class="wrap" target="_blank" href="https://arxiv.org/abs/2412.08640"><i class="fa fa-file-pdf"></i> arXiv</a>
             </td>
           </tr>
-          
-          <tr class="paper_entry" id="harmon">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/harmon_tn.jpg">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://ut-austin-rpl.github.io/Harmon/">
-                <papertitle>Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhenyujiang.me/">Zhenyu Jiang</a>, 
-              <a class="wrap" target="_blank" href="https://xieleo5.github.io/">Yuqi Xie</a>, 
-              <a class="wrap" target="_blank" href="https://lijinhan21.github.io/">Jinhan Li</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://zhuyifengzju.github.io/">Yifeng Zhu</a>, 
-              <a class="wrap" target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
-              <br>
-              <span class="paper_conf">CoRL</span>, <span class="paper_year">2024</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://ut-austin-rpl.github.io/Harmon/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2410.12773"><i class="fa fa-file-pdf"></i> arXiv</a>
-            </td>
-          </tr>
-          
-          <tr class="paper_entry" id="smplolympics">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/smplolympics_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://smplolympics.github.io/SMPLOlympics">
-                <papertitle>SMPLOlympics: Sports Environments for Physically Simulated Humanoids</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>, 
-              <a class="wrap" target="_blank" href="https://jiashunwang.github.io/">Jiashun Wang</a>, 
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=KhEDSsAAAAAJ&hl=en">Kangni Liu</a>, 
-              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>, 
-              <a class="wrap" target="_blank" href="https://tesslerc.github.io/">Chen Tessler</a>, 
-              <a class="wrap" target="_blank" href="https://wangjingbo1219.github.io/">Jingbo Wang</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://www.jinkuncao.com/">Jinkun Cao</a>, 
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/zihui-liu-327015224/">Zihui Lin</a>, 
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/franklinwayne/">Fengyi Wang</a>, 
-              <a class="wrap" target="_blank" href="https://www.cs.cmu.edu/~jkh/">Jessica Hodgins</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">arXiv</span>, <span class="paper_year">2024</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://smplolympics.github.io/SMPLOlympics"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2407.00187"><i class="fa fa-file-pdf"></i> arXiv</a>
-            </td>
-          </tr>
-          
+
           <tr class="paper_entry" id="coin">
             <td class="paper_tb">
               <div class="tb_one">
@@ -1214,105 +1715,19 @@
                 <papertitle>COIN: Control-Inpainting Diffusion Prior for Human and Camera Motion Estimation</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://jeffli.site/">Jiefeng Li</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>, 
-              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/pavlo-molchanov/">Pavlo Molchanov</a>, 
-              <a class="wrap" target="_blank" href="https://www.mvig.org/">Cewu Lu</a>, 
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>, 
+              <a class="wrap" target="_blank" href="https://jeffli.site/">Jiefeng Li</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>,
+              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/pavlo-molchanov/">Pavlo Molchanov</a>,
+              <a class="wrap" target="_blank" href="https://www.mvig.org/">Cewu Lu</a>,
+              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
               <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>
               <br>
               <span class="paper_conf">ECCV</span>, <span class="paper_year">2024</span>
               <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/COIN/"><i class="fa fa-globe"></i> project page</a> | 
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/COIN/"><i class="fa fa-globe"></i> project page</a> |
               <a class="wrap" target="_blank" href="https://arxiv.org/abs/2408.16426"><i class="fa fa-file-pdf"></i> arXiv</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="agg">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/agg_tn.gif">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://ir1d.github.io/AGG/">
-                <papertitle>AGG: Amortized Generative 3D Gaussians for Single Image to 3D</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://ir1d.github.io/">Dejia Xu</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://mortezamardani.github.io/mardani/">Morteza Mardani</a>, 
-              <a class="wrap" target="_blank" href="https://sifeiliu.net/">Sifei Liu</a>,
-              <a class="wrap" target="_blank" href="https://tsong.me/">Jiaming Song</a>, 
-              <a class="wrap" target="_blank" href="https://express.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
-              <a class="wrap" target="_blank" href="http://latentspace.cc/">Arash Vahdat</a>
-              <br>
-              <span class="paper_conf">TMLR</span>, <span class="paper_year">2024</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://ir1d.github.io/AGG/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2401.04099"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/jkwmp2UH0Ug"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="gavatar">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/gavatar_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://nvlabs.github.io/GAvatar">
-                <papertitle>GAvatar: Animatable 3D Gaussian Avatars with Implicit Mesh Learning</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://sunshineatnoon.github.io/">Xueting Li</a>,
-              <a class="wrap" target="_blank" href="https://huangyangyi.github.io/">Yangyi Huang</a>,
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>,
-              <a class="wrap" target="_blank" href="https://luminohope.org/">Koki Nagano</a>,
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a> &nbsp; (*Equal Contribution)
-              <br>
-              <span class="paper_conf">CVPR</span>, <span class="paper_year">2024</span> &nbsp <strong class="wrap paper_oral">(Highlight)</strong>
-              <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/GAvatar"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2312.11461"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/PbCF1HzrKrs"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="pacer+">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/pacer+_tn.gif">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2024/html/Wang_PACER_On-Demand_Pedestrian_Animation_Controller_in_Driving_Scenarios_CVPR_2024_paper.html">
-                <papertitle>PACER+: On-Demand Pedestrian Animation Controller in Driving Scenarios</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://wangjingbo1219.github.io/">Jingbo Wang</a>*,
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>*,
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://yixuanli98.github.io/">Yixuan Li</a>,
-              <a class="wrap" target="_blank" href="https://daibo.info/">Bo Dai</a> &nbsp; (*Equal contribution)
-              <br>
-              <span class="paper_conf">CVPR</span>, <span class="paper_year">2024</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2404.19722"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/Pq10Q_ZBOrw"><i class="fab fa-youtube"></i> video</a> |
-              <a class="wrap" target="_blank" href="https://github.com/IDC-Flash/PacerPlus"><i class="fab fa-github"></i> code</a>
             </td>
           </tr>
 
@@ -1330,10 +1745,10 @@
                 <papertitle>PACE: Human and Camera Motion Estimation from in-the-wild Videos</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://ait.ethz.ch/people/mkocabas">Muhammed Kocabas</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/pavlo-molchanov/">Pavlo Molchanov</a>, 
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/kelly-guo-18316982/?originalSubdomain=ca">Yunrong Guo</a>, 
+              <a class="wrap" target="_blank" href="https://ait.ethz.ch/people/mkocabas">Muhammed Kocabas</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/pavlo-molchanov/">Pavlo Molchanov</a>,
+              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/kelly-guo-18316982/?originalSubdomain=ca">Yunrong Guo</a>,
               <a class="wrap" target="_blank" href="https://ps.is.mpg.de/person/black">Michael J. Black</a>,
               <a class="wrap" target="_blank" href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>,
               <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>,
@@ -1341,37 +1756,9 @@
               <br>
               <span class="paper_conf">3DV</span>, <span class="paper_year">2024</span> &nbsp <strong class="wrap paper_oral">(Spotlight Presentation)</strong>
               <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/PACE/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2310.13768"><i class="fa fa-file-pdf"></i> arXiv</a> | 
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/PACE/"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2310.13768"><i class="fa fa-file-pdf"></i> arXiv</a> |
               <a class="wrap" target="_blank" href="https://youtu.be/TmU3uttNTF4"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="physdiff">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/physdiff_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://nvlabs.github.io/PhysDiff">
-                <papertitle>PhysDiff: Physics-Guided Human Motion Diffusion Model</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://tsong.me/">Jiaming Song</a>, 
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>, 
-              <a class="wrap" target="_blank" href="http://latentspace.cc/">Arash Vahdat</a>, 
-              <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>
-              <br>
-              <span class="paper_conf">ICCV</span>, <span class="paper_year">2023</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation)</strong>
-              <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/PhysDiff"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2212.02500"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/y8Tdcvzjfjg"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
 
@@ -1389,13 +1776,13 @@
                 <papertitle>Learning Human Dynamics in Autonomous Driving Scenarios</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://wangjingbo1219.github.io/">Jingbo Wang</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>, 
-              <a class="wrap" target="_blank" href="https://kevincxie.github.io/">Kevin Xie</a>, 
-              <a class="wrap" target="_blank" href="http://dahua.site/">Dahua Lin</a>, 
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>, 
-              <a class="wrap" target="_blank" href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>, 
+              <a class="wrap" target="_blank" href="https://wangjingbo1219.github.io/">Jingbo Wang</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>,
+              <a class="wrap" target="_blank" href="https://kevincxie.github.io/">Kevin Xie</a>,
+              <a class="wrap" target="_blank" href="http://dahua.site/">Dahua Lin</a>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>,
+              <a class="wrap" target="_blank" href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>,
               <a class="wrap" target="_blank" href="https://www.samehkhamis.com/">Sameh Khamis</a>
               <br>
               <span class="paper_conf">ICCV</span>, <span class="paper_year">2023</span>
@@ -1404,126 +1791,6 @@
             </td>
           </tr>
 
-          <tr class="paper_entry" id="vid2player3d">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/vid2player3d_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://research.nvidia.com/labs/toronto-ai/vid2player3d/">
-                <papertitle>Learning Physically Simulated Tennis Skills from Broadcast Videos</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://cs.stanford.edu/~haotianz/">Haotian Zhang</a>,
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/makoviychuk-viktor-9199988/">Viktor Makoviychuk</a>,
-              <a class="wrap" target="_blank" href="https://www.linkedin.com/in/kelly-guo-18316982/?originalSubdomain=ca">Yunrong Guo</a>,
-              <a class="wrap" target="_blank" href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>,
-              <a class="wrap" target="_blank" href="https://xbpeng.github.io/">Xue Bin Peng</a>,
-              <a class="wrap" target="_blank" href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>
-              <br>
-              <span class="paper_conf">SIGGRAPH</span>, <span class="paper_year">2023</span> &nbsp <strong class="wrap paper_oral">(Best Paper Honorable Mention)</strong>
-              <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/vid2player3d/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/vid2player3d/data/tennis_skills_main.pdf"><i class="fa fa-file-pdf"></i> paper</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/ZZVKrNs7_mk"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="trace_pace">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/trace_pace_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://research.nvidia.com/labs/toronto-ai/trace-pace/">
-                <papertitle>Trace and Pace: Controllable Pedestrian Animation via Guided Trajectory Diffusion</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://davrempe.github.io/">Davis Rempe</a>*,
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>*,
-              <a class="wrap" target="_blank" href="https://xbpeng.github.io/">Xue Bin Peng</a>,
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
-              Karsten Kreis,
-              <a class="wrap" target="_blank" href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a>,
-              <a class="wrap" target="_blank" href="https://orlitany.github.io/">Or Litany</a> &nbsp; (*Equal contribution)
-              <br>
-              <span class="paper_conf">CVPR</span>, <span class="paper_year">2023</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/trace-pace/"><i class="fa fa-globe"></i> project page</a> |
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2304.01893"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/labs/toronto-ai/trace-pace/supp.html"><i class="fab fa-youtube"></i> demo</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="rgb_nerf">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/rgb_nerf_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://ngp-mpc.github.io/">
-                <papertitle>RGB-Only Reconstruction of Tabletop Scenes for Collision-Free Manipulator Control</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://recordmp3.github.io/">Zhenggang Tang</a>, 
-              <a class="wrap" target="_blank" href="https://balakumar-s.github.io/">Balakumar Sundaralingam</a>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/jonathan-tremblay">Jonathan Tremblay</a>,
-              <a class="wrap" target="_blank" href="https://wenbowen123.github.io/">Bowen Wen</a>,
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/stephen-tyree">Stephen Tyree</a>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/charles-loop">Charles Loop</a>, 
-              <a class="wrap" target="_blank" href="https://www.alexander-schwing.de/">Alexander Schwing</a>, 
-              <a class="wrap" target="_blank" href="https://cecas.clemson.edu/~stb/">Stan Birchfield</a>
-              <br>
-              <span class="paper_conf">ICRA</span>, <span class="paper_year">2023</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://ngp-mpc.github.io/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2210.11668"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/Bn1w9y5aYYg"><i class="fab fa-youtube"></i> video</a> | 
-              <a class="wrap" target="_blank" href="https://drive.google.com/drive/folders/15Ch7pJM8znw8l4-wHu6rJvDdwRoNqI8l?usp=share_link"><i class="fa fa-file-archive"></i> data</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="embody_scene">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/embody_scene.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://embodiedscene.github.io/embodiedpose/">
-                <papertitle>Embodied Scene-aware Human Pose Estimation</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>, 
-              <a class="wrap" target="_blank" href="https://sh8.io/">Shun Iwase</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">NeurIPS</span>, <span class="paper_year">2022</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://embodiedscene.github.io/embodiedpose/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2206.09106"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/8Ae0xzqAtm8"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-          
           <tr class="paper_entry" id="phd_thesis">
             <td class="paper_tb">
               <div class="tb_one">
@@ -1544,7 +1811,7 @@
               <a class="wrap" target="_blank" href="https://arxiv.org/abs/2204.13678"><i class="fa fa-file-pdf"></i> arXiv</a>
             </td>
           </tr>
-          
+
           <tr class="paper_entry" id="glamr">
             <td class="paper_tb">
               <div class="tb_one">
@@ -1559,125 +1826,18 @@
                 <papertitle>GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras</papertitle>
               </a>
               <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>, 
-              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/pavlo-molchanov/">Pavlo Molchanov</a>, 
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.umariqbal.info/">Umar Iqbal</a>,
+              <a class="wrap" target="_blank" href="https://research.nvidia.com/person/pavlo-molchanov/">Pavlo Molchanov</a>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
               <a class="wrap" target="_blank" href="https://jankautz.com/">Jan Kautz</a>
               <br>
               <span class="paper_conf">CVPR</span>, <span class="paper_year">2022</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation - Top 4.2%)</strong>
               <br>
-              <a class="wrap" target="_blank" href="https://nvlabs.github.io/GLAMR"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2112.01524"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/wpObDXcYueo"><i class="fab fa-youtube"></i> video</a> | 
+              <a class="wrap" target="_blank" href="https://nvlabs.github.io/GLAMR"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2112.01524"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/wpObDXcYueo"><i class="fab fa-youtube"></i> video</a> |
               <a class="wrap" target="_blank" href="https://github.com/NVlabs/GLAMR"><i class="fab fa-github"></i> code</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="transform2act">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/transform2act_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://sites.google.com/view/transform2act">
-                <papertitle>Transform2Act: Learning a Transform-and-Control Policy for Efficient Agent Design</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://yudasong.github.io/">Yuda Song</a>, 
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>, 
-              <a class="wrap" target="_blank" href="https://wensun.github.io/">Wen Sun</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">ICLR</span>, <span class="paper_year">2022</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation - Top 1.6%)</strong>
-              <br>
-              <a class="wrap" target="_blank" href="https://sites.google.com/view/transform2act"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2110.03659"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://openreview.net/forum?id=UcDUxjPYWSr"><i class="fa fa-file-pdf"></i> openreview</a> | 
-              <a class="wrap" target="_blank" href="https://github.com/Khrylx/Transform2Act"><i class="fab fa-github"></i> code</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="online_meta">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/online_meta_tn.png" style="position: relative;clip: rect(50px,50px,0px,0px);">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://arxiv.org/abs/2204.01925">
-                <papertitle>Online No-regret Model-Based Meta RL for Personalized Navigation</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://yudasong.github.io/">Yuda Song</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://wensun.github.io/">Wen Sun</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">Learning for Dynamics & Control (L4DC)</span>, <span class="paper_year">2022</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2204.01925"><i class="fa fa-file-pdf"></i> paper</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="agent_design">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/agent_design_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://www.zhengyiluo.com/projects/agent_design/">
-                <papertitle>From Universal Humanoid Control to Automatic Physically Valid Character Creation</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/">Zhengyi Luo</a>,
-              <strong class="wrap">Ye Yuan</strong>,
-              <a class="wrap" target="_blank" href="https://www.cs.cmu.edu/~kkitani/">Kris M. Kitani</a>
-              <br>
-              <span class="paper_conf">arXiv</span>, <span class="paper_year">2022</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://www.zhengyiluo.com/projects/agent_design/"><i class="fa fa-globe"></i> project page</a> |
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2206.09286"><i class="fa fa-file-pdf"></i> arXiv</a> |
-              <a class="wrap" target="_blank" href="https://www.youtube.com/watch?v=uC0P2iB56kM"><i class="fab fa-youtube"></i> video</a> |
-              <a class="wrap" target="_blank" href="https://github.com/ZhengyiLuo/UHC"><i class="fab fa-github"></i> code</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="kin_poly">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/kinpoly_tn.gif">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://zhengyiluo.github.io/projects/kin_poly/">
-                <papertitle>Dynamics-Regulated Kinematic Policy for Egocentric Pose Estimation</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/">Zhengyi Luo</a>, 
-              <a class="wrap" target="_blank" href="https://ryohachiuma.github.io/">Ryo Hachiuma</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">NeurIPS</span>, <span class="paper_year">2021</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://zhengyiluo.github.io/projects/kin_poly/"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2106.05969"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/yEiK9K1N-zw"><i class="fab fa-youtube"></i> video</a> | 
-              <a class="wrap" target="_blank" href="https://github.com/KlabCMU/kin-poly"><i class="fab fa-github"></i> code</a>
             </td>
           </tr>
 
@@ -1694,44 +1854,16 @@
                 <papertitle>AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent Forecasting</papertitle>
               </a>
               <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://www.xinshuoweng.com/">Xinshuo Weng</a>, 
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=9W0Bd00AAAAJ&hl=en">Yanglan Ou</a>, 
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://www.xinshuoweng.com/">Xinshuo Weng</a>,
+              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=9W0Bd00AAAAJ&hl=en">Yanglan Ou</a>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
               <br>
               <span class="paper_conf">ICCV</span>, <span class="paper_year">2021</span>
               <br>
-              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/agentformer"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2103.14023"><i class="fa fa-file-pdf"></i> arXiv</a> | 
+              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/agentformer"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2103.14023"><i class="fa fa-file-pdf"></i> arXiv</a> |
               <a class="wrap" target="_blank" href="https://github.com/Khrylx/AgentFormer"><i class="fab fa-github"></i> code</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="simpoe">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/simpoe_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://www.ye-yuan.com/simpoe">
-                <papertitle>SimPoE: Simulated Character Control for 3D Human Pose Estimation</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&hl=en&oi=sra">Shih-En Wei</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>, 
-              <a class="wrap" target="_blank" href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en">Jason Saragih</a>
-              <br>
-              <span class="paper_conf">CVPR</span>, <span class="paper_year">2021</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation - Top 4.2%)</strong>
-              <br>
-              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/simpoe"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2104.00683"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/icdsZfVBT80"><i class="fab fa-youtube"></i> talk</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/_0BtkjOrwX4"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
 
@@ -1748,40 +1880,14 @@
                 <papertitle>PTP: Parallelized Tracking and Prediction with Graph Neural Networks and Diversity Sampling</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://www.xinshuoweng.com/">Xinshuo Weng</a>*, 
-              <strong class="wrap">Ye Yuan</strong>*, 
+              <a class="wrap" target="_blank" href="https://www.xinshuoweng.com/">Xinshuo Weng</a>*,
+              <strong class="wrap">Ye Yuan</strong>*,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a> &nbsp; (*Equal Contribution)
               <br>
               <span class="paper_conf">RA-L and ICRA</span>, <span class="paper_year">2021</span> &nbsp <strong class="wrap paper_oral">(Best Student Paper Candidate < 2%)</strong>
               <br>
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2003.07847"><i class="fa fa-file-pdf"></i> arXiv</a> | 
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2003.07847"><i class="fa fa-file-pdf"></i> arXiv</a> |
               <a class="wrap" target="_blank" href="https://github.com/xinshuoweng/PTP"><i class="fab fa-github"></i> code</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="rfc">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/rfc_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://www.ye-yuan.com/rfc">
-                <papertitle>Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">NeurIPS</span>, <span class="paper_year">2020</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/rfc"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2006.07364"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/XuzH1u78o1Y"><i class="fab fa-youtube"></i> video</a> | 
-              <a class="wrap" target="_blank" href="https://github.com/Khrylx/RFC"><i class="fab fa-github"></i> code</a>
             </td>
           </tr>
 
@@ -1798,16 +1904,16 @@
                 <papertitle>DLow: Diversifying Latent Flows for Diverse Human Motion Prediction</papertitle>
               </a>
               <br>
-              <strong class="wrap">Ye Yuan</strong>, 
+              <strong class="wrap">Ye Yuan</strong>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
               <br>
               <span class="paper_conf">ECCV</span>, <span class="paper_year">2020</span>
               <br>
-              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/dlow"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2003.08386"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/c45ss6Tcb2A"><i class="fab fa-youtube"></i> talk</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/nVYGHnRB1_M"><i class="fab fa-youtube"></i> summary</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/64OEdSadb00"><i class="fab fa-youtube"></i> video</a> | 
+              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/dlow"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2003.08386"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/c45ss6Tcb2A"><i class="fab fa-youtube"></i> talk</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/nVYGHnRB1_M"><i class="fab fa-youtube"></i> summary</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/64OEdSadb00"><i class="fab fa-youtube"></i> video</a> |
               <a class="wrap" target="_blank" href="https://github.com/Khrylx/DLow"><i class="fab fa-github"></i> code</a>
             </td>
           </tr>
@@ -1825,17 +1931,17 @@
                 <papertitle>Efficient Non-Line-of-Sight Imaging from Transient Sinograms</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://marikoisogawa.github.io/">Mariko Isogawa</a>, 
-              <a class="wrap" target="_blank" href="https://dorianchan.com/">Dorian Yao Chan</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>, 
+              <a class="wrap" target="_blank" href="https://marikoisogawa.github.io/">Mariko Isogawa</a>,
+              <a class="wrap" target="_blank" href="https://dorianchan.com/">Dorian Yao Chan</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>
               <br>
               <span class="paper_conf">ECCV</span>, <span class="paper_year">2020</span>
               <br>
-              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/dlow"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2008.02787"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/iGhstZG2SCg"><i class="fab fa-youtube"></i> summary</a> | 
+              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/dlow"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2008.02787"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/iGhstZG2SCg"><i class="fab fa-youtube"></i> summary</a> |
               <a class="wrap" target="_blank" href="https://youtu.be/Ec3lLi4SbX8"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
@@ -1854,13 +1960,13 @@
                 <papertitle>Diverse Trajectory Forecasting with Determinantal Point Processes</papertitle>
               </a>
               <br>
-              <strong class="wrap">Ye Yuan</strong>, 
+              <strong class="wrap">Ye Yuan</strong>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
               <br>
               <span class="paper_conf">ICLR</span>, <span class="paper_year">2020</span>
               <br>
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/1907.04967"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://openreview.net/forum?id=ryxnY3NYPS"><i class="fa fa-file-pdf"></i> openreview</a> | 
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/1907.04967"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://openreview.net/forum?id=ryxnY3NYPS"><i class="fa fa-file-pdf"></i> openreview</a> |
               <a class="wrap" target="_blank" href="https://youtu.be/5i71SU_IdS4"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
@@ -1878,16 +1984,16 @@
                 <papertitle>Optical Non-Line-of-Sight Physics-based 3D Human Pose Estimation</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://marikoisogawa.github.io/">Mariko Isogawa</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>, 
+              <a class="wrap" target="_blank" href="https://marikoisogawa.github.io/">Mariko Isogawa</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
               <br>
               <span class="paper_conf">CVPR</span>, <span class="paper_year">2020</span>
               <br>
-              <a class="wrap" target="_blank" href="https://marikoisogawa.github.io/project/nlos_pose"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2003.14414"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/4HFulrdmLE8"><i class="fab fa-youtube"></i> video</a> | 
+              <a class="wrap" target="_blank" href="https://marikoisogawa.github.io/project/nlos_pose"><i class="fa fa-globe"></i> project page</a> |
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/2003.14414"><i class="fa fa-file-pdf"></i> arXiv</a> |
+              <a class="wrap" target="_blank" href="https://youtu.be/4HFulrdmLE8"><i class="fab fa-youtube"></i> video</a> |
               <a class="wrap" target="_blank" href="https://github.com/marikoisogawa/OpticalNLOSPose"><i class="fab fa-github"></i> code</a>
             </td>
           </tr>
@@ -1905,14 +2011,14 @@
                 <papertitle>Generative Hybrid Representations for Activity Forecasting with No-Regret Learning</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="http://jiaqi.web.illinois.edu">Jiaqi Guan</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>, 
+              <a class="wrap" target="_blank" href="http://jiaqi.web.illinois.edu">Jiaqi Guan</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
               <a class="wrap" target="_blank" href="https://people.eecs.berkeley.edu/~nrhinehart/">Nick Rhinehart</a>
               <br>
               <span class="paper_conf">CVPR</span>, <span class="paper_year">2020</span> &nbsp <strong class="wrap paper_oral">(Oral Presentation - Top 5.7%)</strong>
               <br>
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/1904.06250"><i class="fa fa-file-pdf"></i> arXiv</a> | 
+              <a class="wrap" target="_blank" href="https://arxiv.org/abs/1904.06250"><i class="fa fa-file-pdf"></i> arXiv</a> |
               <a class="wrap" target="_blank" href="https://drive.google.com/open?id=1EGF5cbFQWRtHBwPbGfFWzjBJ3uajoqk4"><i class="fa fa-file-archive"></i> data</a>
             </td>
           </tr>
@@ -1930,16 +2036,16 @@
                 <papertitle>Back-Hand-Pose: 3D Hand Pose Estimation for a Wrist-worn Camera via Dorsum Deformation Network</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="http://jiaqi.web.illinois.edu">Erwin Wu</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://hsyeo.me/">Hui-Shyong Yeo</a>, 
-              <a class="wrap" target="_blank" href="https://aaronquigley.org/">Aaron Quigley</a>, 
-              <a class="wrap" target="_blank" href="https://www.vogue.cs.titech.ac.jp/koike">Hideki Koike</a>, 
+              <a class="wrap" target="_blank" href="http://jiaqi.web.illinois.edu">Erwin Wu</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://hsyeo.me/">Hui-Shyong Yeo</a>,
+              <a class="wrap" target="_blank" href="https://aaronquigley.org/">Aaron Quigley</a>,
+              <a class="wrap" target="_blank" href="https://www.vogue.cs.titech.ac.jp/koike">Hideki Koike</a>,
               <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
               <br>
               <span class="paper_conf">ACM Symposium on User Interface Software and Technology (UIST)</span>, <span class="paper_year">2020</span>
               <br>
-              <a class="wrap" target="_blank" href="https://dl.acm.org/doi/10.1145/3379337.3415897"><i class="fa fa-file-pdf"></i> paper</a> | 
+              <a class="wrap" target="_blank" href="https://dl.acm.org/doi/10.1145/3379337.3415897"><i class="fa fa-file-pdf"></i> paper</a> |
               <a class="wrap" target="_blank" href="https://drive.google.com/file/d/1rBxhrtjAPWvoDSoK0OrN20TfVJPIILEW/view?usp=sharing"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
@@ -1957,66 +2063,16 @@
                 <papertitle>MonoEye: Multimodal Human Motion Capture System Using A Single Ultra-Wide Fisheye Camera</papertitle>
               </a>
               <br>
-              <a class="wrap" target="_blank" href="https://hwangdonghyun.github.io/">Dong-Hyun Hwang</a>, 
-              <a class="wrap" target="_blank" href="https://dblp.org/pid/247/3933.html">Kohei Aso</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>, 
+              <a class="wrap" target="_blank" href="https://hwangdonghyun.github.io/">Dong-Hyun Hwang</a>,
+              <a class="wrap" target="_blank" href="https://dblp.org/pid/247/3933.html">Kohei Aso</a>,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>,
               <a class="wrap" target="_blank" href="https://www.vogue.cs.titech.ac.jp/koike">Hideki Koike</a>
               <br>
               <span class="paper_conf">ACM Symposium on User Interface Software and Technology (UIST)</span>, <span class="paper_year">2020</span>
               <br>
-              <a class="wrap" target="_blank" href="https://dl.acm.org/doi/10.1145/3379337.3415856"><i class="fa fa-file-pdf"></i> paper</a> | 
+              <a class="wrap" target="_blank" href="https://dl.acm.org/doi/10.1145/3379337.3415856"><i class="fa fa-file-pdf"></i> paper</a> |
               <a class="wrap" target="_blank" href="https://youtu.be/jlxBagEsV1k"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="ego_pose">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two"><video width=100% height=100% muted autoplay loop playsinline>
-                <source src="data/thumbnails/egopose_tn.mp4#t=0.001" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://www.ye-yuan.com/ego-pose">
-                <papertitle>Ego-Pose Estimation and Forecasting as Real-Time PD Control</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">ICCV</span>, <span class="paper_year">2019</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://www.ye-yuan.com/ego-pose"><i class="fa fa-globe"></i> project page</a> | 
-              <a class="wrap" target="_blank" href="https://arxiv.org/abs/1906.03173"><i class="fa fa-file-pdf"></i> arXiv</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/968IIDZeWE0"><i class="fab fa-youtube"></i> video</a> | 
-              <a class="wrap" target="_blank" href="https://github.com/Khrylx/EgoPose"><i class="fab fa-github"></i> code</a> | 
-              <a class="wrap" target="_blank" href="https://drive.google.com/file/d/1vzxVHAtfvfIEDreqYvHulhtNwHcomotV/view?usp=sharing"><i class="fa fa-file-archive"></i> data</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="gailpose">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/gailpose_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ye_Yuan_3D_Ego-Pose_Estimation_ECCV_2018_paper.pdf">
-                <papertitle>3D Ego-Pose Estimation via Imitation Learning</papertitle>
-              </a>
-              <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.cmu.edu/~kkitani/">Kris Kitani</a>
-              <br>
-              <span class="paper_conf">ECCV</span>, <span class="paper_year">2018</span>
-              <br>
-              <a class="wrap" target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ye_Yuan_3D_Ego-Pose_Estimation_ECCV_2018_paper.pdf"><i class="fa fa-file-pdf"></i> paper</a> | 
-              <a class="wrap" target="_blank" href="https://youtu.be/a9GsGUpjxUs"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
 
@@ -2034,38 +2090,14 @@
                 <papertitle>Computational Design of Transformables</papertitle>
               </a>
               <br>
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://www.cs.columbia.edu/~cxz/">Changxi Zheng</a>, 
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="http://www.cs.columbia.edu/~cxz/">Changxi Zheng</a>,
               <a class="wrap" target="_blank" href="http://crl.ethz.ch/people/coros/">Stelian Coros</a>
               <br>
               <span class="paper_conf">ACM SIGGRAPH/Eurographics Symposium on Computer Animation (SCA)</span>, <span class="paper_year">2018</span>
               <br>
-              <a class="wrap" target="_blank" href="http://crl.ethz.ch/papers/transformers.pdf"><i class="fa fa-file-pdf"></i> paper</a> | 
+              <a class="wrap" target="_blank" href="http://crl.ethz.ch/papers/transformers.pdf"><i class="fa fa-file-pdf"></i> paper</a> |
               <a class="wrap" target="_blank" href="https://youtu.be/cgejsrLPimg"><i class="fab fa-youtube"></i> video</a>
-            </td>
-          </tr>
-
-          <tr class="paper_entry" id="modular">
-            <td class="paper_tb">
-              <div class="tb_one">
-                <div class="tb_two">
-                  <img src="data/thumbnails/modular_tn.png">
-                </div>
-              </div>
-            </td>
-            <td class="paper_details">
-              <a target="_blank" href="https://publications.ri.cmu.edu/computational-abstractions-for-interactive-design-of-robotic-devices">
-                <papertitle>Computational Abstractions for Interactive Design of Robotic Devices</papertitle>
-              </a>
-              <br>
-              <a class="wrap" target="_blank" href="https://www.cs.cmu.edu/~rutad/">Ruta Desai</a>, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="http://crl.ethz.ch/people/coros/">Stelian Coros</a>
-              <br>
-              <span class="paper_conf">ICRA</span>, <span class="paper_year">2017</span>
-              <br>
-              <a class="wrap" target="_blank" href="https://publications.ri.cmu.edu/computational-abstractions-for-interactive-design-of-robotic-devices"><i class="fa fa-file-pdf"></i> paper</a> |
-              <a class="wrap" target="_blank" href="https://youtu.be/PGpTsQtznw4"><i class="fab fa-youtube"></i> video</a>
             </td>
           </tr>
 
@@ -2082,10 +2114,10 @@
                 <papertitle>Continuous Optimization of Interior Carving in 3D Fabrication</papertitle>
               </a>
               <br>
-              Yue Xie, 
-              <strong class="wrap">Ye Yuan</strong>, 
-              <a class="wrap" target="_blank" href="https://xchen-cs.github.io/">Xiang Chen</a>, 
-              <a class="wrap" target="_blank" href="http://www.cs.columbia.edu/~cxz/">Changxi Zheng</a>, 
+              Yue Xie,
+              <strong class="wrap">Ye Yuan</strong>,
+              <a class="wrap" target="_blank" href="https://xchen-cs.github.io/">Xiang Chen</a>,
+              <a class="wrap" target="_blank" href="http://www.cs.columbia.edu/~cxz/">Changxi Zheng</a>,
               <a class="wrap" target="_blank" href="http://kunzhou.net/">Kun Zhou</a>
               <br>
               <span class="paper_conf">Frontiers of Computer Science</span>, <span class="paper_year">2017</span>
@@ -2094,11 +2126,9 @@
             </td>
           </tr>
 
-        </tr>
-      </tr>
-          
+          </tbody>
 
-        </tbody></table>
+        </table>
 
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
