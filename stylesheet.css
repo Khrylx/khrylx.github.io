@@ -436,7 +436,7 @@ span.highlight {
 /* ===== Selected Research Section ===== */
 .selected_research_grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -489,11 +489,10 @@ span.highlight {
   font-style: italic;
 }
 
-/* Desktop thumbnails retain their widescreen framing. */
+/* Desktop styles - fixed height */
 @media (min-width: 676px) {
   .research_thumbnail {
-    height: auto;
-    aspect-ratio: 16 / 9;
+    height: 120px;
   }
 
   .research_thumbnail video {
